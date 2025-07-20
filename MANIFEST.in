@@ -1,0 +1,4 @@
+include ieee7007/ontologies/catalog-v001.xml
+include ieee7007/ontologies/evm.owl
+include ieee7007/ontologies/nep.owl
+include ieee7007/ontologies/tlo.owl
