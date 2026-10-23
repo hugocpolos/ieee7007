@@ -26,3 +26,7 @@ timeless, implementation-specific facts about this library.
 ## Build / test
 
 `pip install -e .` ; tests in `tests/` (pytest). Packaging is legacy `setup.py`.
+
+Plotting (`OntologyNavigator.plot*`) is an optional extra: `pip install -e .[plot]` (networkx,
+matplotlib, pygraphviz — the last needs the system graphviz headers, `libgraphviz-dev`). Plot
+imports are lazy, so the core library depends only on owlready2; plot tests skip without the extra.

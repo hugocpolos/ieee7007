@@ -1,9 +1,13 @@
+import importlib.util
 import os
 
 import pytest
 
 from ieee7007.evm import Evm
 from ieee7007.types import IEEE7007Classes, IEEE7007Properties
+
+HAS_PLOT_EXTRA = all(importlib.util.find_spec(m) for m in ('networkx', 'matplotlib', 'pygraphviz'))
+requires_plot = pytest.mark.skipif(not HAS_PLOT_EXTRA, reason="needs the 'plot' extra")
 
 
 @pytest.fixture
@@ -170,6 +174,13 @@ def test_dump_ontology(evm):
     evm.nav.dump_ontology()
 
 
+@pytest.mark.skipif(HAS_PLOT_EXTRA, reason="plot extra is installed")
+def test_plot_without_extra_raises(evm):
+    with pytest.raises(ImportError, match=r"ieee7007\[plot\]"):
+        evm.nav.plot(False)
+
+
+@requires_plot
 def test_plot_ontology(evm):
     robot = evm.new_individual(IEEE7007Classes.nepRobot, 'robot')
     camera = evm.new_individual(IEEE7007Classes.evmEthicalBehaviorMonitor, 'camera')
@@ -178,12 +189,14 @@ def test_plot_ontology(evm):
     evm.nav.plot(False)
 
 
+@requires_plot
 def test_plot_ontology2(evm):
     evm.load_individuals_from_file('./example_data/individuals.csv')
     evm.reasoning()
     evm.nav.plot(False)
 
 
+@requires_plot
 def test_plot_individual(evm):
     robot = evm.new_individual(IEEE7007Classes.nepRobot, 'robot')
     camera = evm.new_individual(IEEE7007Classes.evmEthicalBehaviorMonitor, 'camera')
@@ -193,10 +206,9 @@ def test_plot_individual(evm):
     evm.nav.plot_individual(camera, draw=False)
 
 
+@requires_plot
 def test_plot_more_individuals(evm):
     evm.load_individuals_from_file('./example_data/individuals.csv')
     evm.reasoning()
     for ind in evm.nav.all_individuals:
         evm.nav.plot_individual(ind)
-
-    assert 1 == 2
