@@ -1,0 +1,44 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: test (${{ matrix.variant }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # core: owlready2 only, checks the library imports without the plot extra.
+        # plot: with the 'plot' extra, so the plotting tests run too.
+        variant: [core, plot]
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      # HermiT (bundled with owlready2) needs a Java runtime for reasoning tests.
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Install graphviz headers
+        if: matrix.variant == 'plot'
+        run: sudo apt-get update && sudo apt-get install -y graphviz libgraphviz-dev
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest==8.3.3
+          if [ "${{ matrix.variant }}" = plot ]; then pip install -e ".[plot]"; else pip install -e .; fi
+
+      - name: Run tests
+        run: pytest -v
