@@ -1,5 +1,11 @@
-import networkx as nx
-import matplotlib.pyplot as plt
+def _import_plotting():
+    # Plotting is optional: install with `pip install ieee7007[plot]`.
+    try:
+        import networkx as nx
+        import matplotlib.pyplot as plt
+    except ImportError as e:
+        raise ImportError("plotting requires the 'plot' extra: pip install ieee7007[plot]") from e
+    return nx, plt
 
 
 class PropertyRelation:
@@ -74,6 +80,7 @@ class OntologyNavigator:
         edges.add(_edge_id)
 
     def plot(self, draw=True):
+        nx, plt = _import_plotting()
         G = nx.DiGraph()
         nodes = set()
         edges = set()
@@ -107,6 +114,7 @@ class OntologyNavigator:
         plt.close('all')
 
     def plot_individual(self, individual, individual_color='#557dd4', draw=True):
+        nx, plt = _import_plotting()
         G = nx.DiGraph()
         nodes = set()
         edges = set()
