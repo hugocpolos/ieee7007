@@ -706,41 +706,41 @@
 
     <!-- file://evmcertified_high_capacity -->
 
-    <!-- <owl:NamedIndividual rdf:about="file://evmcertified_high_capacity"> -->
-    <!--     <rdf:type rdf:resource="file://evmgovernance_levels"/> -->
-    <!-- </owl:NamedIndividual> -->
+    <owl:NamedIndividual rdf:about="file://evmcertified_high_capacity">
+        <rdf:type rdf:resource="file://evmgovernance_levels"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- file://evmevolving_capacity -->
 
-    <!-- <owl:NamedIndividual rdf:about="file://evmevolving_capacity"> -->
-    <!--     <rdf:type rdf:resource="file://evmgovernance_levels"/> -->
-    <!-- </owl:NamedIndividual> -->
+    <owl:NamedIndividual rdf:about="file://evmevolving_capacity">
+        <rdf:type rdf:resource="file://evmgovernance_levels"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- file://evmmulti_agents -->
 
-    <!-- <owl:NamedIndividual rdf:about="file://evmmulti_agents"> -->
-    <!--     <rdf:type rdf:resource="file://evmresponsibility_extent"/> -->
-    <!-- </owl:NamedIndividual> -->
+    <owl:NamedIndividual rdf:about="file://evmmulti_agents">
+        <rdf:type rdf:resource="file://evmresponsibility_extent"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- file://evmno_capacity -->
 
-    <!-- <owl:NamedIndividual rdf:about="file://evmno_capacity"> -->
-    <!--     <rdf:type rdf:resource="file://evmgovernance_levels"/> -->
-    <!-- </owl:NamedIndividual> -->
+    <owl:NamedIndividual rdf:about="file://evmno_capacity">
+        <rdf:type rdf:resource="file://evmgovernance_levels"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- file://evmsingle_agent -->
 
-    <!-- <owl:NamedIndividual rdf:about="file://evmsingle_agent"> -->
-    <!--     <rdf:type rdf:resource="file://evmresponsibility_extent"/> -->
-    <!-- </owl:NamedIndividual> -->
+    <owl:NamedIndividual rdf:about="file://evmsingle_agent">
+        <rdf:type rdf:resource="file://evmresponsibility_extent"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1846,7 +1846,7 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="file://evmscope"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
-                                <swrl:argument2 rdf:resource="file:///evmsingle_agent"/>
+                                <swrl:argument2 rdf:resource="file://evmsingle_agent"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1921,7 +1921,7 @@
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="file://evmmaturity"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#mg"/>
-                                                <swrl:argument2 rdf:resource="file:///evmno_capacity"/>
+                                                <swrl:argument2 rdf:resource="file://evmno_capacity"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>

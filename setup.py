@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name='ieee7007',
     packages=find_packages(include=['ieee7007']),
-    version='0.1.0',
+    version='0.2.0',
     description='Library to work with the ontological standards defined on IEEE7007',
     author='hugo.cpolos@gmail.com',
     install_requires=['owlready2'],
