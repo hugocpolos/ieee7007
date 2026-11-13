@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ieee7007"
+version = "0.2.0"
+description = "Library to work with the ontological standards defined on IEEE7007"
+readme = "README.md"
+authors = [{ name = "Hugo Constantinopolos", email = "hugo.cpolos@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = ["owlready2>=0.47"]
+
+[project.optional-dependencies]
+plot = ["networkx", "matplotlib", "pygraphviz"]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["ieee7007"]
+
+[tool.setuptools.package-data]
+ieee7007 = ["ontologies/*.owl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

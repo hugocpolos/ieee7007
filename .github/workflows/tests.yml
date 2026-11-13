@@ -37,8 +37,8 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt pytest==8.3.3
-          if [ "${{ matrix.variant }}" = plot ]; then pip install -e ".[plot]"; else pip install -e .; fi
+          pip install -r requirements.txt
+          if [ "${{ matrix.variant }}" = plot ]; then pip install -e ".[test,plot]"; else pip install -e ".[test]"; fi
 
       - name: Run tests
         run: pytest -v
