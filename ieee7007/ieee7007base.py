@@ -13,6 +13,8 @@ Module Imports:
 """
 
 import logging
+import os
+import uuid
 
 import owlready2
 
@@ -20,43 +22,113 @@ from ieee7007.factory import Factory
 from ieee7007.instances_loader import IndividualsLoader
 from ieee7007.navigator import OntologyNavigator
 
+NAMESPACE = "https://w3id.org/ieee7007/"
+"""Common prefix of the IRIs of the bundled ontologies and of all their terms."""
+
+ONTOLOGIES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ontologies")
+
+# Bundled ontologies in import order: each one imports only those before it.
+_BUNDLED = ("tlo", "nep", "evm")
+
+
+def ontology_iri(name):
+    """
+    Returns the ontology IRI of a bundled ontology.
+
+    Parameters:
+        name (str): 'tlo', 'nep' or 'evm'.
+
+    Returns:
+        str: e.g. 'https://w3id.org/ieee7007/evm'. Its terms are '<ontology IRI>#<term>'.
+    """
+    if name not in _BUNDLED:
+        raise ValueError(f"unknown bundled ontology '{name}'")
+    return NAMESPACE + name
+
 
 class IEEE7007Base:
     """
     Base class for managing and interacting with ontologies compliant with the IEEE 7007 standard.
 
-    This class handles the loading of ontologies, management of individuals, and reasoning tasks
-    using the Owlready2 library. It encapsulates functionality for creating individuals,
-    loading data from files, and running reasoners.
+    The bundled ontologies are loaded under their own IRIs (see `ontology_iri`), from the copies
+    shipped with this package, so nothing depends on where the package is installed and nothing
+    is downloaded. Individuals live in a separate ontology, the *individuals ontology*, which
+    imports the standard's ontology by IRI. Saving writes only the individuals ontology.
     """
 
-    def __init__(self, ontology_file):
+    def __init__(self, ontology_name, individuals_file=None, individuals_iri=None):
         """
-        Initializes the IEEE7007Base instance with the specified ontology file.
+        Loads a bundled ontology (with its imports) and prepares the individuals ontology.
 
         Parameters:
-            ontology_file (str): The path to the ontology file to be loaded.
+            ontology_name (str): The bundled ontology to load ('evm' loads TLO, NEP and EVM).
+            individuals_file (str): Optional path to a file written by `save_to_file`. Its
+                ontology becomes the individuals ontology, so new individuals are added to it.
+            individuals_iri (str): Optional IRI for a new individuals ontology, e.g.
+                'https://example.org/my-scenario'. Ignored with `individuals_file`, which
+                declares its own IRI. Defaults to a fresh 'urn:uuid:' IRI.
         """
         self._world = owlready2.World()
-        self._ontology = self.__load_ontology(ontology_file)
-        self._factory = Factory(self._ontology)
+        self._schema = self.__load_bundled(ontology_name)
+        if individuals_file is not None:
+            if individuals_iri is not None:
+                raise ValueError("pass either individuals_file or individuals_iri, not both")
+            self._ontology = self.__load_file(individuals_file)
+        else:
+            self._ontology = self._world.get_ontology(individuals_iri or uuid.uuid4().urn)
+            self._ontology.imported_ontologies.append(self._schema)
+        self._factory = Factory(self._schema)
         self._loader = IndividualsLoader(self._ontology, self._factory)
         self.nav = OntologyNavigator(self._ontology)
 
-    def __load_ontology(self, input_ontology_path):
+    def __load_bundled(self, ontology_name):
         """
-        Loads the ontology from the specified file path.
+        Loads the bundled ontologies up to `ontology_name`, each under its own IRI.
 
-        Parameters:
-            input_ontology_path (str): The path to the ontology file.
+        Loading them in import order means every owl:imports is already present in the world
+        when it is read, so Owlready2 never tries to fetch an IRI.
+
+        Returns:
+            ontology: The loaded `ontology_name` ontology.
+        """
+        ontology_iri(ontology_name)  # validates the name
+        ontology = None
+        for name in _BUNDLED[:_BUNDLED.index(ontology_name) + 1]:
+            path = os.path.join(ONTOLOGIES_DIR, f"{name}.owl")
+            logging.info("Loading %s from %s", ontology_iri(name), path)
+            with open(path, "rb") as fileobj:
+                ontology = self._world.get_ontology(ontology_iri(name)).load(fileobj=fileobj)
+        logging.info("The %s ontology has been successfully loaded", ontology_name.upper())
+        return ontology
+
+    def __load_file(self, path):
+        """
+        Loads a file written by `save_to_file` into the world.
+
+        The file declares its own ontology IRI, which Owlready2 adopts; its imports of the
+        bundled ontologies resolve to the copies already loaded.
 
         Returns:
             ontology: The loaded ontology.
         """
-        logging.info("Loading the ontology from the %s file", input_ontology_path)
-        ontology = self._world.get_ontology(input_ontology_path)
-        ontology.load()
-        logging.info("The EVM ontology has been successfully loaded")
+        logging.info("Loading individuals from %s", path)
+        with open(path, "rb") as fileobj:
+            return self._world.get_ontology(f"urn:uuid:{uuid.uuid4()}").load(fileobj=fileobj)
+
+    def import_individuals_file(self, path):
+        """
+        Loads another file written by `save_to_file` and imports it into the individuals
+        ontology, so its individuals can be linked to new ones. Its individuals keep their own
+        IRIs and are not written again by `save_to_file`.
+
+        Parameters:
+            path (str): The path to the file.
+
+        Returns:
+            ontology: The loaded ontology.
+        """
+        ontology = self.__load_file(path)
+        self._ontology.imported_ontologies.append(ontology)
         return ontology
 
     def load_individuals_from_file(self, individuals_file):
@@ -118,12 +190,23 @@ class IEEE7007Base:
 
     def ontology(self):
         """
-        Returns the currently loaded ontology.
+        Returns the individuals ontology: the one new individuals are created in and
+        `save_to_file` writes.
 
         Returns:
-            ontology: The loaded ontology.
+            ontology: The individuals ontology.
         """
         return self._ontology
+
+    def schema(self):
+        """
+        Returns the bundled ontology this instance was created with (e.g. EVM). Its imports
+        (NEP, TLO) are in `schema().imported_ontologies`.
+
+        Returns:
+            ontology: The bundled ontology.
+        """
+        return self._schema
 
     def world(self):
         """
@@ -136,7 +219,11 @@ class IEEE7007Base:
 
     def save_to_file(self, filename):
         """
-        Save the ontology to an owl file.
+        Saves the individuals ontology to a file, as N-Triples.
+
+        The file holds only the individuals and their relations, plus owl:imports of the
+        standard's ontology (and of any `import_individuals_file` ontologies) by IRI. It contains
+        no filesystem paths, so it loads on any machine with `Evm(individuals_file=...)`.
 
         Parameters:
             filename (str): name of the file

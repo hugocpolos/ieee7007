@@ -22,9 +22,15 @@ Usage:
     evm = ieee7007.Evm()
     evm.load_individuals_from_file('name_of_the_file.csv')
 
-    # If its important to save this ontology for future use, it can be saved in a file
+    # If its important to save this ontology for future use, it can be saved in a file.
+    # Only the individuals are saved; the file imports the standard's ontology by IRI and loads
+    # anywhere with ieee7007.Evm('new_ontology.owl').
     evm.save_to_file('new_ontology.owl')
     ```
+
+    The individuals get IRIs under a fresh 'urn:uuid:' IRI unless one is given:
+    ieee7007.Evm(individuals_iri='https://example.org/my-scenario'). The standard's own terms are
+    'https://w3id.org/ieee7007/{tlo,nep,evm}#<name>'.
 
 
     Where the name_of_the_file.csv has the following format:

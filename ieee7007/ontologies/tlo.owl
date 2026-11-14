@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="tlo.owl#"
-     xml:base="tlo.owl"
+<rdf:RDF xmlns="https://w3id.org/ieee7007/tlo#"
+     xml:base="https://w3id.org/ieee7007/tlo"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:nep="file://nep"
+     xmlns:nep="https://w3id.org/ieee7007/nep#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:tlo="file://tlo#"
+     xmlns:tlo="https://w3id.org/ieee7007/tlo#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="tlo.owl">
+    <owl:Ontology rdf:about="https://w3id.org/ieee7007/tlo">
+        <owl:versionIRI rdf:resource="https://w3id.org/ieee7007/0.3.0/tlo"/>
         <rdfs:comment>An example mapping of ERAS-TLO CLIF axioms into OWL axioms using Manchester OWL syntax</rdfs:comment>
     </owl:Ontology>
     
@@ -43,298 +44,298 @@
     
 
 
-    <!-- file://tlo#tloaffects -->
+    <!-- https://w3id.org/ieee7007/tlo#tloaffects -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloaffects">
-        <rdfs:domain rdf:resource="file://tlo#tloProcess"/>
-        <rdfs:range rdf:resource="file://tlo#tloPhysical"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloaffects">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlocharacterizes -->
+    <!-- https://w3id.org/ieee7007/tlo#tlocharacterizes -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlocharacterizes">
-        <rdfs:domain rdf:resource="file://tlo#tloAbstract"/>
-        <rdfs:range rdf:resource="file://tlo#tloPhysical"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlocharacterizes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloAbstract"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlocreated_by -->
+    <!-- https://w3id.org/ieee7007/tlo#tlocreated_by -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlocreated_by">
-        <owl:inverseOf rdf:resource="file://tlo#tlocreates"/>
-        <rdfs:domain rdf:resource="file://tlo#tloActionEvent"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlocreated_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlocreates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloActionEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlocreates -->
+    <!-- https://w3id.org/ieee7007/tlo#tlocreates -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlocreates">
-        <rdfs:domain rdf:resource="file://tlo#tloAgent"/>
-        <rdfs:range rdf:resource="file://tlo#tloActionEvent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlocreates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloActionEvent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlodescribedBy -->
+    <!-- https://w3id.org/ieee7007/tlo#tlodescribedBy -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlodescribedBy">
-        <rdfs:domain rdf:resource="file://tlo#tloEntity"/>
-        <rdfs:range rdf:resource="file://tlo#tloDescription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlodescribedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloDescription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlodescribes -->
+    <!-- https://w3id.org/ieee7007/tlo#tlodescribes -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlodescribes">
-        <rdfs:domain rdf:resource="file://tlo#tloDescription"/>
-        <rdfs:range rdf:resource="file://tlo#tloEntity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlodescribes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloenactedBy -->
+    <!-- https://w3id.org/ieee7007/tlo#tloenactedBy -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloenactedBy">
-        <owl:inverseOf rdf:resource="file://tlo#tloenacts"/>
-        <rdfs:domain rdf:resource="file://tlo#tloRole"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloenactedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tloenacts"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloRole"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloenacts -->
+    <!-- https://w3id.org/ieee7007/tlo#tloenacts -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloenacts">
-        <rdfs:domain rdf:resource="file://tlo#tloAgent"/>
-        <rdfs:range rdf:resource="file://tlo#tloRole"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloenacts">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloRole"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloend_time -->
+    <!-- https://w3id.org/ieee7007/tlo#tloend_time -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloend_time">
-        <rdfs:domain rdf:resource="file://tlo#tloEvent"/>
-        <rdfs:range rdf:resource="file://tlo#tloTime"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloend_time">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloformulatedBy -->
+    <!-- https://w3id.org/ieee7007/tlo#tloformulatedBy -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloformulatedBy">
-        <owl:inverseOf rdf:resource="file://tlo#tloformulates"/>
-        <rdfs:domain rdf:resource="file://tlo#tloInformationArtifact"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloformulatedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tloformulates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloformulates -->
+    <!-- https://w3id.org/ieee7007/tlo#tloformulates -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloformulates">
-        <rdfs:domain rdf:resource="file://tlo#tloAgent"/>
-        <rdfs:range rdf:resource="file://tlo#tloInformationArtifact"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloformulates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlohasMember -->
+    <!-- https://w3id.org/ieee7007/tlo#tlohasMember -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlohasMember">
-        <owl:inverseOf rdf:resource="file://tlo#tlois_member_of"/>
-        <rdfs:domain rdf:resource="file://tlo#tloCollective"/>
-        <rdfs:range rdf:resource="file://tlo#tloEntity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlohasMember">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloCollective"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlohasParticipant -->
+    <!-- https://w3id.org/ieee7007/tlo#tlohasParticipant -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlohasParticipant">
-        <owl:inverseOf rdf:resource="file://tlo#tloparticipates_in"/>
-        <rdfs:domain rdf:resource="file://tlo#tloProcess"/>
-        <rdfs:range rdf:resource="file://tlo#tloevmObject"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlohasParticipant">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tloparticipates_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloevmObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloidentified_at -->
+    <!-- https://w3id.org/ieee7007/tlo#tloidentified_at -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloidentified_at">
-        <rdfs:domain rdf:resource="file://tlo#tloPhysical"/>
-        <rdfs:range rdf:resource="file://tlo#tloTime"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloidentified_at">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloidentified_by -->
+    <!-- https://w3id.org/ieee7007/tlo#tloidentified_by -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloidentified_by">
-        <rdfs:domain rdf:resource="file://tlo#tloPhysical"/>
-        <rdfs:range rdf:resource="file://tlo#tloProperty"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloidentified_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloisRealizedBy -->
+    <!-- https://w3id.org/ieee7007/tlo#tloisRealizedBy -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloisRealizedBy">
-        <owl:inverseOf rdf:resource="file://tlo#tlorealizes"/>
-        <rdfs:domain rdf:resource="file://tlo#tloMethod"/>
-        <rdfs:range rdf:resource="file://tlo#tloProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloisRealizedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlorealizes"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlois_member_of -->
+    <!-- https://w3id.org/ieee7007/tlo#tlois_member_of -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlois_member_of">
-        <rdfs:domain rdf:resource="file://tlo#tloEntity"/>
-        <rdfs:range rdf:resource="file://tlo#tloCollective"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlois_member_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloCollective"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlois_stage_at -->
+    <!-- https://w3id.org/ieee7007/tlo#tlois_stage_at -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlois_stage_at">
-        <rdfs:domain rdf:resource="file://tlo#tloProcess"/>
-        <rdfs:range rdf:resource="file://tlo#tloTime"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlois_stage_at">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlois_stage_of -->
+    <!-- https://w3id.org/ieee7007/tlo#tlois_stage_of -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlois_stage_of">
-        <rdfs:domain rdf:resource="file://tlo#tloProcess"/>
-        <rdfs:range rdf:resource="file://tlo#tloProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlois_stage_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlolocated_at -->
+    <!-- https://w3id.org/ieee7007/tlo#tlolocated_at -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlolocated_at">
-        <rdfs:domain rdf:resource="file://tlo#tloPhysical"/>
-        <rdfs:range rdf:resource="file://tlo#tloSpatioTemporalPlace"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlolocated_at">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloSpatioTemporalPlace"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlomanifests -->
+    <!-- https://w3id.org/ieee7007/tlo#tlomanifests -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlomanifests">
-        <owl:inverseOf rdf:resource="file://tlo#tlooccurs_in"/>
-        <rdfs:domain rdf:resource="file://tlo#tloProcess"/>
-        <rdfs:range rdf:resource="file://tlo#tloEvent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlomanifests">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlooccurs_in"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloEvent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlooccurs_in -->
+    <!-- https://w3id.org/ieee7007/tlo#tlooccurs_in -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlooccurs_in">
-        <rdfs:domain rdf:resource="file://tlo#tloEvent"/>
-        <rdfs:range rdf:resource="file://tlo#tloProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlooccurs_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloparticipates_in -->
+    <!-- https://w3id.org/ieee7007/tlo#tloparticipates_in -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloparticipates_in">
-        <rdfs:domain rdf:resource="file://tlo#tloevmObject"/>
-        <rdfs:range rdf:resource="file://tlo#tloProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloparticipates_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloevmObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloperceived_by -->
+    <!-- https://w3id.org/ieee7007/tlo#tloperceived_by -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloperceived_by">
-        <rdfs:domain rdf:resource="file://tlo#tloEntity"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloperceived_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlopresent_at -->
+    <!-- https://w3id.org/ieee7007/tlo#tlopresent_at -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlopresent_at">
-        <rdfs:domain rdf:resource="file://tlo#tloPhysical"/>
-        <rdfs:range rdf:resource="file://tlo#tloTime"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlopresent_at">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloproperty_of -->
+    <!-- https://w3id.org/ieee7007/tlo#tloproperty_of -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloproperty_of">
-        <rdfs:domain rdf:resource="file://tlo#tloProperty"/>
-        <rdfs:range rdf:resource="file://tlo#tloEntity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloproperty_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlorealizes -->
+    <!-- https://w3id.org/ieee7007/tlo#tlorealizes -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlorealizes">
-        <rdfs:domain rdf:resource="file://tlo#tloProcess"/>
-        <rdfs:range rdf:resource="file://tlo#tloMethod"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlorealizes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlorenders -->
+    <!-- https://w3id.org/ieee7007/tlo#tlorenders -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlorenders">
-        <rdfs:domain rdf:resource="file://tlo#tloInformationArtifact"/>
-        <rdfs:range rdf:resource="file://tlo#tloAbstract"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlorenders">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAbstract"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloselected_by -->
+    <!-- https://w3id.org/ieee7007/tlo#tloselected_by -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloselected_by">
-        <rdfs:domain rdf:resource="file://tlo#tloPlan"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloselected_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlostart_time -->
+    <!-- https://w3id.org/ieee7007/tlo#tlostart_time -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlostart_time">
-        <rdfs:domain rdf:resource="file://tlo#tloEvent"/>
-        <rdfs:range rdf:resource="file://tlo#tloTime"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlostart_time">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlotransmits -->
+    <!-- https://w3id.org/ieee7007/tlo#tlotransmits -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlotransmits">
-        <owl:inverseOf rdf:resource="file://tlo#tlotransmitted_by"/>
-        <rdfs:domain rdf:resource="file://tlo#tloAgentCommunication"/>
-        <rdfs:range rdf:resource="file://tlo#tloInformationArtifact"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlotransmits">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlotransmitted_by"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tlotransmitted_by -->
+    <!-- https://w3id.org/ieee7007/tlo#tlotransmitted_by -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlotransmitted_by">
-        <rdfs:domain rdf:resource="file://tlo#tloInformationArtifact"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgentCommunication"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlotransmitted_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
     </owl:ObjectProperty>
     
 
@@ -350,63 +351,63 @@
     
 
 
-    <!-- file://tlo#tloAbstract -->
+    <!-- https://w3id.org/ieee7007/tlo#tloAbstract -->
 
-    <owl:Class rdf:about="file://tlo#tloAbstract">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloAbstract">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloEntity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloEntity"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlocharacterizes"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlocharacterizes"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://tlo#tloPhysical"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="file://tlo#tloPhysical"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloActionEvent -->
+    <!-- https://w3id.org/ieee7007/tlo#tloActionEvent -->
 
-    <owl:Class rdf:about="file://tlo#tloActionEvent">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloActionEvent">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloEvent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloEvent"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlocreated_by"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloAgent"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlocreated_by"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="file://tlo#tloEnvironmentalEvent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/tlo#tloEnvironmentalEvent"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloAgent -->
+    <!-- https://w3id.org/ieee7007/tlo#tloAgent -->
 
-    <owl:Class rdf:about="file://tlo#tloAgent">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloevmObject"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloAgent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloevmObject"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloAgentCommunication -->
+    <!-- https://w3id.org/ieee7007/tlo#tloAgentCommunication -->
 
-    <owl:Class rdf:about="file://tlo#tloAgentCommunication">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloAgentCommunication">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloActionEvent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloActionEvent"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlotransmits"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloInformationArtifact"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlotransmits"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -415,47 +416,47 @@
     
 
 
-    <!-- file://tlo#tloAttribute -->
+    <!-- https://w3id.org/ieee7007/tlo#tloAttribute -->
 
-    <owl:Class rdf:about="file://tlo#tloAttribute">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloAttribute">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloProperty"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloproperty_of"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloevmObject"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloproperty_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloevmObject"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="file://tlo#tloManner"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/tlo#tloManner"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloCollective -->
+    <!-- https://w3id.org/ieee7007/tlo#tloCollective -->
 
-    <owl:Class rdf:about="file://tlo#tloCollective">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloCollective">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAbstract"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAbstract"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://tlo#tlodescribes"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlodescribes"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloDescription"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloDescription"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://tlo#tlois_member_of"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloEntity"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -464,25 +465,25 @@
     
 
 
-    <!-- file://tlo#tloContinuant -->
+    <!-- https://w3id.org/ieee7007/tlo#tloContinuant -->
 
-    <owl:Class rdf:about="file://tlo#tloContinuant">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloPhysical"/>
-        <owl:disjointWith rdf:resource="file://tlo#tloOccurrent"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloContinuant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/tlo#tloOccurrent"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloDescription -->
+    <!-- https://w3id.org/ieee7007/tlo#tloDescription -->
 
-    <owl:Class rdf:about="file://tlo#tloDescription">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloDescription">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAbstract"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAbstract"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlodescribes"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloEntity"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlodescribes"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -491,48 +492,48 @@
     
 
 
-    <!-- file://tlo#tloEntity -->
+    <!-- https://w3id.org/ieee7007/tlo#tloEntity -->
 
-    <owl:Class rdf:about="file://tlo#tloEntity">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloEntity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloEnumDataTypes -->
+    <!-- https://w3id.org/ieee7007/tlo#tloEnumDataTypes -->
 
-    <owl:Class rdf:about="file://tlo#tloEnumDataTypes">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloDescription"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloEnumDataTypes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloDescription"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloEnvironmentalEvent -->
+    <!-- https://w3id.org/ieee7007/tlo#tloEnvironmentalEvent -->
 
-    <owl:Class rdf:about="file://tlo#tloEnvironmentalEvent">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloEvent"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloEnvironmentalEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloEvent"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloEvent -->
+    <!-- https://w3id.org/ieee7007/tlo#tloEvent -->
 
-    <owl:Class rdf:about="file://tlo#tloEvent">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloEvent">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloOccurrent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloOccurrent"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloend_time"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloTime"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloend_time"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlooccurs_in"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloProcess"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlooccurs_in"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlostart_time"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloTime"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlostart_time"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -541,16 +542,16 @@
     
 
 
-    <!-- file://tlo#tloInformationArtifact -->
+    <!-- https://w3id.org/ieee7007/tlo#tloInformationArtifact -->
 
-    <owl:Class rdf:about="file://tlo#tloInformationArtifact">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloevmObject"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloevmObject"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloformulatedBy"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloAgent"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloformulatedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -559,24 +560,24 @@
     
 
 
-    <!-- file://tlo#tloInteractionProcess -->
+    <!-- https://w3id.org/ieee7007/tlo#tloInteractionProcess -->
 
-    <owl:Class rdf:about="file://tlo#tloInteractionProcess">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloInteractionProcess">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloProcess"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloProcess"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlohasParticipant"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloAgent"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlohasParticipant"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://tlo#tlooccurs_in"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlooccurs_in"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloActionEvent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloActionEvent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -585,16 +586,16 @@
     
 
 
-    <!-- file://tlo#tloManner -->
+    <!-- https://w3id.org/ieee7007/tlo#tloManner -->
 
-    <owl:Class rdf:about="file://tlo#tloManner">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloManner">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloProperty"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloproperty_of"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloProcess"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloproperty_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -603,20 +604,20 @@
     
 
 
-    <!-- file://tlo#tloMethod -->
+    <!-- https://w3id.org/ieee7007/tlo#tloMethod -->
 
-    <owl:Class rdf:about="file://tlo#tloMethod">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloMethod">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloDescription"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloDescription"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlodescribes"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloProcess"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlodescribes"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloisRealizedBy"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloProcess"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloisRealizedBy"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -625,62 +626,28 @@
     
 
 
-    <!-- file://tlo#tloOccurrent -->
+    <!-- https://w3id.org/ieee7007/tlo#tloOccurrent -->
 
-    <owl:Class rdf:about="file://tlo#tloOccurrent">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloPhysical"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloOccurrent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloPhysical"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloPhysical -->
+    <!-- https://w3id.org/ieee7007/tlo#tloPhysical -->
 
-    <owl:Class rdf:about="file://tlo#tloPhysical">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloPhysical">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloEntity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloEntity"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlolocated_at"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloSpatioTemporalPlace"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlolocated_at"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloSpatioTemporalPlace"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlopresent_at"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloTime"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- file://tlo#tloPlan -->
-
-    <owl:Class rdf:about="file://tlo#tloPlan">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloMethod"/>
-    </owl:Class>
-    
-
-
-    <!-- file://tlo#tloProcess -->
-
-    <owl:Class rdf:about="file://tlo#tloProcess">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloOccurrent"/>
-    </owl:Class>
-    
-
-
-    <!-- file://tlo#tloProperty -->
-
-    <owl:Class rdf:about="file://tlo#tloProperty">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAbstract"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloproperty_of"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloEntity"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlopresent_at"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloTime"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -689,24 +656,32 @@
     
 
 
-    <!-- file://tlo#tloRole -->
+    <!-- https://w3id.org/ieee7007/tlo#tloPlan -->
 
-    <owl:Class rdf:about="file://tlo#tloRole">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloOccurrent"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloPlan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloSchema -->
+    <!-- https://w3id.org/ieee7007/tlo#tloProcess -->
 
-    <owl:Class rdf:about="file://tlo#tloSchema">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloOccurrent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ieee7007/tlo#tloProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloProperty">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloDescription"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAbstract"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlodescribes"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloContinuant"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloproperty_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloEntity"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -715,34 +690,60 @@
     
 
 
-    <!-- file://tlo#tloSituation -->
+    <!-- https://w3id.org/ieee7007/tlo#tloRole -->
 
-    <owl:Class rdf:about="file://tlo#tloSituation">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloContinuant"/>
-        <owl:disjointWith rdf:resource="file://tlo#tloevmObject"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloRole">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloOccurrent"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloSocialInteractionProcess -->
+    <!-- https://w3id.org/ieee7007/tlo#tloSchema -->
 
-    <owl:Class rdf:about="file://tlo#tloSocialInteractionProcess">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloSchema">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloInteractionProcess"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloDescription"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlodescribes"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloContinuant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ieee7007/tlo#tloSituation -->
+
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloContinuant"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/tlo#tloevmObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ieee7007/tlo#tloSocialInteractionProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloSocialInteractionProcess">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInteractionProcess"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://tlo#tlooccurs_in"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tlooccurs_in"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloAgentCommunication"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlohasParticipant"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlohasParticipant"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://tlo#tloAgent"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/tlo#tloAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -751,26 +752,26 @@
     
 
 
-    <!-- file://tlo#tloSpatioTemporalPlace -->
+    <!-- https://w3id.org/ieee7007/tlo#tloSpatioTemporalPlace -->
 
-    <owl:Class rdf:about="file://tlo#tloSpatioTemporalPlace">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloAbstract"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloSpatioTemporalPlace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloAbstract"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloTime -->
+    <!-- https://w3id.org/ieee7007/tlo#tloTime -->
 
-    <owl:Class rdf:about="file://tlo#tloTime">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloAbstract"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloTime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloAbstract"/>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloevmObject -->
+    <!-- https://w3id.org/ieee7007/tlo#tloevmObject -->
 
-    <owl:Class rdf:about="file://tlo#tloevmObject">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloContinuant"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloevmObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloContinuant"/>
     </owl:Class>
     
 
@@ -786,27 +787,27 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://tlo#tloCollective"/>
-            <rdf:Description rdf:about="file://tlo#tloDescription"/>
-            <rdf:Description rdf:about="file://tlo#tloProperty"/>
-            <rdf:Description rdf:about="file://tlo#tloSpatioTemporalPlace"/>
-            <rdf:Description rdf:about="file://tlo#tloTime"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloCollective"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloDescription"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloProperty"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloSpatioTemporalPlace"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloTime"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://tlo#tloEnumDataTypes"/>
-            <rdf:Description rdf:about="file://tlo#tloMethod"/>
-            <rdf:Description rdf:about="file://tlo#tloSchema"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloEnumDataTypes"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloMethod"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloSchema"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://tlo#tloEvent"/>
-            <rdf:Description rdf:about="file://tlo#tloProcess"/>
-            <rdf:Description rdf:about="file://tlo#tloRole"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloEvent"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloProcess"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloRole"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
