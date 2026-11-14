@@ -12,7 +12,7 @@ timeless, implementation-specific facts about this library.
 - `IEEE7007Base` / `Evm` (`ieee7007base.py`, `evm.py`) — load the Owlready2 world and ontology;
   save; run HermiT (`sync_reasoner_hermit`). `ontology()` is the *individuals ontology* (where
   `new_individual` creates and what `save_to_file` writes); `schema()` is the bundled ontology.
-- `Factory` (`factory.py`) — maps `IEEE7007Classes` to Owlready2 classes.
+- `Factory` (`factory.py`) — looks up Owlready2 classes by local name (current or pre-0.3.0).
 - `IndividualsLoader` (`instances_loader.py`) — create individuals/relations from code or CSV.
 - `OntologyNavigator` (`navigator.py`) — query relations.
 - `types.py` — `IEEE7007Classes`, `IEEE7007Properties` enums: the single source of truth for
@@ -23,7 +23,14 @@ timeless, implementation-specific facts about this library.
 - Every term is `https://w3id.org/ieee7007/{tlo,nep,evm}#<name>`, e.g. `…/nep#nepAgentPlan`;
   ontology IRIs are `https://w3id.org/ieee7007/{tlo,nep,evm}`, with `owl:versionIRI`
   `https://w3id.org/ieee7007/<version>/<name>`. `NAMESPACE` and `ontology_iri()` in
-  `ieee7007base.py` hold them. Local names are unchanged, so lookups by `.name` work as before.
+  `ieee7007base.py` hold them.
+- Local names carry no ontology prefix (`nep#Robot`, `nep#applies`, `tlo#affects`), except the 7
+  that would otherwise clash: `tloAgent`/`nepAgent`, `tloSituation`/`nepSituation`,
+  `tloEnumDataTypes`/`nepEnumDataTypes`/`evmEnumDataTypes`. Local names are unique across the
+  three ontologies (Owlready2 and `Factory` look terms up by local name; `tests/test_names.py`).
+- `IEEE7007Classes`/`IEEE7007Properties` *member names* keep the prefix (`nepRobot`,
+  `nepApplies`); their *values* are the local names. `factory.resolve_name` also accepts the
+  pre-0.3.0 prefixed names (`nepRobot`, `nepapplies`), so old CSV files still load.
 - The bundled files are loaded under those IRIs from the package copies (`load(fileobj=…)`, in
   import order: TLO, NEP, EVM), so `owl:imports` never triggers a download and nothing depends on
   the install path.

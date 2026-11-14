@@ -41,16 +41,16 @@ def test_inferred_types_are_declared_terms(reasoned):
 
 
 @pytest.mark.parametrize("individual, expected", [
-    # evmNormViolation is a tloActionEvent
-    ("make_sound", {"evmNormViolation", "tloActionEvent", "tloEvent", "tloOccurrent"}),
-    # evmEthicalBehaviorMonitor is a tloevmObject
-    ("monitor", {"evmEthicalBehaviorMonitor", "tloevmObject", "tloContinuant"}),
-    # evmEventCausation is a tloInteractionProcess
-    ("robot_malfunctioning", {"evmEventCausation", "tloInteractionProcess", "tloProcess"}),
-    # evmResponsibilityAscription is a tloSocialInteractionProcess
-    ("responsibility_ascription_robot", {"tloSocialInteractionProcess", "tloInteractionProcess"}),
-    # evmAscriptionJustification is a tloInformationArtifact
-    ("justification", {"evmAscriptionJustification", "tloInformationArtifact"}),
+    # NormViolation is an ActionEvent
+    ("make_sound", {"NormViolation", "ActionEvent", "Event", "Occurrent"}),
+    # EthicalBehaviorMonitor is an evmObject (TLO)
+    ("monitor", {"EthicalBehaviorMonitor", "evmObject", "Continuant"}),
+    # EventCausation is an InteractionProcess
+    ("robot_malfunctioning", {"EventCausation", "InteractionProcess", "Process"}),
+    # ResponsibilityAscription is a SocialInteractionProcess
+    ("responsibility_ascription_robot", {"SocialInteractionProcess", "InteractionProcess"}),
+    # AscriptionJustification is an InformationArtifact
+    ("justification", {"AscriptionJustification", "InformationArtifact"}),
 ])
 def test_tlo_types_are_inferred(reasoned, individual, expected):
     found = reasoned.world().search_one(iri=f"*#{individual}")
