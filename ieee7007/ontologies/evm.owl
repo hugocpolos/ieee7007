@@ -249,7 +249,7 @@
     <!-- file://evmperceived_in -->
 
     <owl:ObjectProperty rdf:about="file://evmperceived_in">
-        <rdfs:domain rdf:resource="file://tlo#ActionEvent"/>
+        <rdfs:domain rdf:resource="file://tlo#tloActionEvent"/>
         <rdfs:range rdf:resource="file://nepSituation"/>
     </owl:ObjectProperty>
     
@@ -318,7 +318,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#Schema"/>
+                    <rdf:Description rdf:about="file://tlo#tloSchema"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
@@ -340,7 +340,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#InformationArtifact"/>
+                    <rdf:Description rdf:about="file://tlo#tloInformationArtifact"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="file://evmjustifies"/>
                         <owl:someValuesFrom rdf:resource="file://evmResponsibilityAscription"/>
@@ -403,7 +403,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#evmObject"/>
+                    <rdf:Description rdf:about="file://tlo#tloevmObject"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="file://evmobserves"/>
                         <owl:someValuesFrom rdf:resource="file://nepAgent"/>
@@ -435,7 +435,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#InteractionProcess"/>
+                    <rdf:Description rdf:about="file://tlo#tloInteractionProcess"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="file://evmactor"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
@@ -464,7 +464,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#InformationArtifact"/>
+                    <rdf:Description rdf:about="file://tlo#tloInformationArtifact"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
@@ -521,7 +521,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#Method"/>
+                    <rdf:Description rdf:about="file://tlo#tloMethod"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="file://evmis_sanction_for"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
@@ -540,7 +540,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#ActionEvent"/>
+                    <rdf:Description rdf:about="file://tlo#tloActionEvent"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="file://evmdocumented_in"/>
                         <owl:someValuesFrom rdf:resource="file://evmNormViolationIncident"/>
@@ -576,7 +576,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#InformationArtifact"/>
+                    <rdf:Description rdf:about="file://tlo#tloInformationArtifact"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="file://evmrecords_incidence_of"/>
                         <owl:someValuesFrom rdf:resource="file://evmNormViolation"/>
@@ -594,7 +594,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#SocialInteractionProcess"/>
+                    <rdf:Description rdf:about="file://tlo#tloSocialInteractionProcess"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
@@ -635,7 +635,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#InteractionProcess"/>
+                    <rdf:Description rdf:about="file://tlo#tloInteractionProcess"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
