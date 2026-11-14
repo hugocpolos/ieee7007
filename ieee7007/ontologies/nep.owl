@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="nep.owl#"
-     xml:base="nep.owl"
+<rdf:RDF xmlns="https://w3id.org/ieee7007/nep#"
+     xml:base="https://w3id.org/ieee7007/nep"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:nep="file://nep"
+     xmlns:nep="https://w3id.org/ieee7007/nep#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:tlo="file://tlo#"
+     xmlns:tlo="https://w3id.org/ieee7007/tlo#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="nep.owl">
-        <owl:imports rdf:resource="tlo.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/ieee7007/nep">
+        <owl:versionIRI rdf:resource="https://w3id.org/ieee7007/0.3.0/nep"/>
+        <owl:imports rdf:resource="https://w3id.org/ieee7007/tlo"/>
         <rdfs:comment>An example mapping of ERAS-NEP CLIF axioms into OWL axioms using Manchester OWL syntax</rdfs:comment>
     </owl:Ontology>
     
@@ -46,9 +47,9 @@
     
 
 
-    <!-- file://nepstring -->
+    <!-- https://w3id.org/ieee7007/nep#nepstring -->
 
-    <rdfs:Datatype rdf:about="file://nepstring">
+    <rdfs:Datatype rdf:about="https://w3id.org/ieee7007/nep#nepstring">
         <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </rdfs:Datatype>
     
@@ -77,400 +78,400 @@
     
 
 
-    <!-- file://nepaccepted_by -->
+    <!-- https://w3id.org/ieee7007/nep#nepaccepted_by -->
 
-    <owl:ObjectProperty rdf:about="file://nepaccepted_by">
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepaccepted_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepaccommodates -->
+    <!-- https://w3id.org/ieee7007/nep#nepaccommodates -->
 
-    <owl:ObjectProperty rdf:about="file://nepaccommodates">
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepEthicalPrinciple"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepaccommodates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalPrinciple"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepactivates -->
+    <!-- https://w3id.org/ieee7007/nep#nepactivates -->
 
-    <owl:ObjectProperty rdf:about="file://nepactivates">
-        <rdfs:domain rdf:resource="file://nepAgentAction"/>
-        <rdfs:range rdf:resource="file://nepDerogation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepactivates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepDerogation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepapplies -->
+    <!-- https://w3id.org/ieee7007/nep#nepapplies -->
 
-    <owl:ObjectProperty rdf:about="file://nepapplies">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://nepAgentPlan"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepapplies">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepassigned_to -->
+    <!-- https://w3id.org/ieee7007/nep#nepassigned_to -->
 
-    <owl:ObjectProperty rdf:about="file://nepassigned_to">
-        <rdfs:domain rdf:resource="file://nepAgentRole"/>
-        <rdfs:range rdf:resource="file://nepAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepassigned_to">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentRole"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepauthorized_by -->
+    <!-- https://w3id.org/ieee7007/nep#nepauthorized_by -->
 
-    <owl:ObjectProperty rdf:about="file://nepauthorized_by">
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepauthorized_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepcategory -->
+    <!-- https://w3id.org/ieee7007/nep#nepcategory -->
 
-    <owl:ObjectProperty rdf:about="file://nepcategory">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepcategory">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepnorm_category"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_category"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepcaused_by -->
+    <!-- https://w3id.org/ieee7007/nep#nepcaused_by -->
 
-    <owl:ObjectProperty rdf:about="file://nepcaused_by">
-        <rdfs:domain rdf:resource="file://nepEthicalDilemma"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepcaused_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalDilemma"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepconflicts_with -->
+    <!-- https://w3id.org/ieee7007/nep#nepconflicts_with -->
 
-    <owl:ObjectProperty rdf:about="file://nepconflicts_with">
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepconflicts_with">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepconstrains_plans_for -->
+    <!-- https://w3id.org/ieee7007/nep#nepconstrains_plans_for -->
 
-    <owl:ObjectProperty rdf:about="file://nepconstrains_plans_for">
-        <rdfs:domain rdf:resource="file://nepEthicalTheory"/>
-        <rdfs:range rdf:resource="file://nepSituationPlanRepertoire"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepconstrains_plans_for">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepcontains -->
+    <!-- https://w3id.org/ieee7007/nep#nepcontains -->
 
-    <owl:ObjectProperty rdf:about="file://nepcontains">
-        <rdfs:domain rdf:resource="file://nepAgentPlan"/>
-        <rdfs:range rdf:resource="file://nepPlanAction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepcontains">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepdeactivates -->
+    <!-- https://w3id.org/ieee7007/nep#nepdeactivates -->
 
-    <owl:ObjectProperty rdf:about="file://nepdeactivates">
-        <rdfs:domain rdf:resource="file://nepAgentAction"/>
-        <rdfs:range rdf:resource="file://nepDerogation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepdeactivates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepDerogation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepexecutes -->
+    <!-- https://w3id.org/ieee7007/nep#nepexecutes -->
 
-    <owl:ObjectProperty rdf:about="file://nepexecutes">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://nepPlanAction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepexecutes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepfeatures_described_in -->
+    <!-- https://w3id.org/ieee7007/nep#nepfeatures_described_in -->
 
-    <owl:ObjectProperty rdf:about="file://nepfeatures_described_in">
-        <rdfs:domain rdf:resource="file://nepSituation"/>
-        <rdfs:range rdf:resource="file://nepSituationPlanRepertoire"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepfeatures_described_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nephas_as_goal -->
+    <!-- https://w3id.org/ieee7007/nep#nephas_as_goal -->
 
-    <owl:ObjectProperty rdf:about="file://nephas_as_goal">
-        <rdfs:domain rdf:resource="file://nepTaskAssignment"/>
-        <rdfs:range rdf:resource="file://nepSituation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nephas_as_goal">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepTaskAssignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepincludes -->
+    <!-- https://w3id.org/ieee7007/nep#nepincludes -->
 
-    <owl:ObjectProperty rdf:about="file://nepincludes">
-        <rdfs:domain rdf:resource="file://nepSituationPlanRepertoire"/>
-        <rdfs:range rdf:resource="file://nepAgentPlan"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepincludes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepinfluences_norm_applicability -->
+    <!-- https://w3id.org/ieee7007/nep#nepinfluences_norm_applicability -->
 
-    <owl:ObjectProperty rdf:about="file://nepinfluences_norm_applicability">
-        <rdfs:domain rdf:resource="file://nepSocialCollection"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepinfluences_norm_applicability">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepinitiates -->
+    <!-- https://w3id.org/ieee7007/nep#nepinitiates -->
 
-    <owl:ObjectProperty rdf:about="file://nepinitiates">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgentCommunication"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepinitiates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepintends_to_realize -->
+    <!-- https://w3id.org/ieee7007/nep#nepintends_to_realize -->
 
-    <owl:ObjectProperty rdf:about="file://nepintends_to_realize">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://nepSituation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepintends_to_realize">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepis_implemented_by -->
+    <!-- https://w3id.org/ieee7007/nep#nepis_implemented_by -->
 
-    <owl:ObjectProperty rdf:about="file://nepis_implemented_by">
-        <rdfs:domain rdf:resource="file://nepPlanAction"/>
-        <rdfs:range rdf:resource="file://nepAgentAction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepis_implemented_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepis_involved_in -->
+    <!-- https://w3id.org/ieee7007/nep#nepis_involved_in -->
 
-    <owl:ObjectProperty rdf:about="file://nepis_involved_in">
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepSituation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepis_involved_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepis_perceived_by -->
+    <!-- https://w3id.org/ieee7007/nep#nepis_perceived_by -->
 
-    <owl:ObjectProperty rdf:about="file://nepis_perceived_by">
-        <rdfs:domain rdf:resource="file://nepEnvironment"/>
-        <rdfs:range rdf:resource="file://nepAgent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepis_perceived_by">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepEnvironment"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepis_perception_of -->
+    <!-- https://w3id.org/ieee7007/nep#nepis_perception_of -->
 
-    <owl:ObjectProperty rdf:about="file://nepis_perception_of">
-        <rdfs:domain rdf:resource="file://nepSituation"/>
-        <rdfs:range rdf:resource="file://nepEnvironment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepis_perception_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepEnvironment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepis_prescribed_by -->
+    <!-- https://w3id.org/ieee7007/nep#nepis_prescribed_by -->
 
-    <owl:ObjectProperty rdf:about="file://nepis_prescribed_by">
-        <owl:inverseOf rdf:resource="file://nepspecifies_norm_modality"/>
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepEthicalTheory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepis_prescribed_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepspecifies_norm_modality"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepis_response_to -->
+    <!-- https://w3id.org/ieee7007/nep#nepis_response_to -->
 
-    <owl:ObjectProperty rdf:about="file://nepis_response_to">
-        <rdfs:domain rdf:resource="file://nepAnswer"/>
-        <rdfs:range rdf:resource="file://nepQuery"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepis_response_to">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAnswer"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepQuery"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://neplogically_justifies -->
+    <!-- https://w3id.org/ieee7007/nep#neplogically_justifies -->
 
-    <owl:ObjectProperty rdf:about="file://neplogically_justifies">
-        <rdfs:domain rdf:resource="file://nepActionRationale"/>
-        <rdfs:range rdf:resource="file://nepPlanAction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#neplogically_justifies">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepActionRationale"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepprecedes -->
+    <!-- https://w3id.org/ieee7007/nep#nepprecedes -->
 
-    <owl:ObjectProperty rdf:about="file://nepprecedes">
-        <rdfs:domain rdf:resource="file://nepSituation"/>
-        <rdfs:range rdf:resource="file://nepSituation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepprecedes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepprescribes_context_for -->
+    <!-- https://w3id.org/ieee7007/nep#nepprescribes_context_for -->
 
-    <owl:ObjectProperty rdf:about="file://nepprescribes_context_for">
-        <rdfs:domain rdf:resource="file://nepSocialCollection"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepprescribes_context_for">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepprompts -->
+    <!-- https://w3id.org/ieee7007/nep#nepprompts -->
 
-    <owl:ObjectProperty rdf:about="file://nepprompts">
-        <rdfs:domain rdf:resource="file://nepSituation"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgentCommunication"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepprompts">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepranks_preferred_norm -->
+    <!-- https://w3id.org/ieee7007/nep#nepranks_preferred_norm -->
 
-    <owl:ObjectProperty rdf:about="file://nepranks_preferred_norm">
-        <rdfs:domain rdf:resource="file://nepDilemmaMitigationPrinciple"/>
-        <rdfs:range rdf:resource="file://nepEthicalDilemma"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepranks_preferred_norm">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepDilemmaMitigationPrinciple"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalDilemma"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepreceives -->
+    <!-- https://w3id.org/ieee7007/nep#nepreceives -->
 
-    <owl:ObjectProperty rdf:about="file://nepreceives">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://tlo#tloAgentCommunication"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepreceives">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://neprecognizes -->
+    <!-- https://w3id.org/ieee7007/nep#neprecognizes -->
 
-    <owl:ObjectProperty rdf:about="file://neprecognizes">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://nepSituation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#neprecognizes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepsatisfies -->
+    <!-- https://w3id.org/ieee7007/nep#nepsatisfies -->
 
-    <owl:ObjectProperty rdf:about="file://nepsatisfies">
-        <rdfs:domain rdf:resource="file://nepAgentPlan"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepsatisfies">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepselects_plans_from -->
+    <!-- https://w3id.org/ieee7007/nep#nepselects_plans_from -->
 
-    <owl:ObjectProperty rdf:about="file://nepselects_plans_from">
-        <rdfs:domain rdf:resource="file://nepAgent"/>
-        <rdfs:range rdf:resource="file://nepSituationPlanRepertoire"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepselects_plans_from">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepspecifies_norm_modality -->
+    <!-- https://w3id.org/ieee7007/nep#nepspecifies_norm_modality -->
 
-    <owl:ObjectProperty rdf:about="file://nepspecifies_norm_modality">
-        <rdfs:domain rdf:resource="file://nepEthicalTheory"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepspecifies_norm_modality">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepstate -->
+    <!-- https://w3id.org/ieee7007/nep#nepstate -->
 
-    <owl:ObjectProperty rdf:about="file://nepstate">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepstate">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="file://nepNorm"/>
-        <rdfs:range rdf:resource="file://nepnorm_states"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepstipulates -->
+    <!-- https://w3id.org/ieee7007/nep#nepstipulates -->
 
-    <owl:ObjectProperty rdf:about="file://nepstipulates">
-        <rdfs:domain rdf:resource="file://nepAgentRole"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepstipulates">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentRole"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepsubscribes_to -->
+    <!-- https://w3id.org/ieee7007/nep#nepsubscribes_to -->
 
-    <owl:ObjectProperty rdf:about="file://nepsubscribes_to">
-        <rdfs:domain rdf:resource="file://nepAgentPlan"/>
-        <rdfs:range rdf:resource="file://nepEthicalTheory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepsubscribes_to">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepsucceeds -->
+    <!-- https://w3id.org/ieee7007/nep#nepsucceeds -->
 
-    <owl:ObjectProperty rdf:about="file://nepsucceeds">
-        <rdfs:domain rdf:resource="file://nepSituation"/>
-        <rdfs:range rdf:resource="file://nepSituation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepsucceeds">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://nepteam_type -->
+    <!-- https://w3id.org/ieee7007/nep#nepteam_type -->
 
-    <owl:ObjectProperty rdf:about="file://nepteam_type">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#nepteam_type">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="file://nepTeam"/>
-        <rdfs:range rdf:resource="file://nepteam_types"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepTeam"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepteam_types"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://neptemporarily_suspends -->
+    <!-- https://w3id.org/ieee7007/nep#neptemporarily_suspends -->
 
-    <owl:ObjectProperty rdf:about="file://neptemporarily_suspends">
-        <rdfs:domain rdf:resource="file://nepDerogation"/>
-        <rdfs:range rdf:resource="file://nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/nep#neptemporarily_suspends">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepDerogation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- file://tlo#tloaffects -->
+    <!-- https://w3id.org/ieee7007/tlo#tloaffects -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloaffects"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloaffects"/>
     
 
 
-    <!-- file://tlo#tloenacts -->
+    <!-- https://w3id.org/ieee7007/tlo#tloenacts -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tloenacts"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tloenacts"/>
     
 
 
-    <!-- file://tlo#tlois_member_of -->
+    <!-- https://w3id.org/ieee7007/tlo#tlois_member_of -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlois_member_of"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
     
 
 
-    <!-- file://tlo#tlorenders -->
+    <!-- https://w3id.org/ieee7007/tlo#tlorenders -->
 
-    <owl:ObjectProperty rdf:about="file://tlo#tlorenders"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/tlo#tlorenders"/>
     
 
 
@@ -485,30 +486,30 @@
     
 
 
-    <!-- file://nepActionRationale -->
+    <!-- https://w3id.org/ieee7007/nep#nepActionRationale -->
 
-    <owl:Class rdf:about="file://nepActionRationale">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloMethod"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepActionRationale">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
     </owl:Class>
     
 
 
-    <!-- file://nepAgent -->
+    <!-- https://w3id.org/ieee7007/nep#nepAgent -->
 
-    <owl:Class rdf:about="file://nepAgent">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepAgent">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAgent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAgent"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloenacts"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloenacts"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepAgentRole"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgentRole"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlois_member_of"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepSocialCollection"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -517,16 +518,16 @@
     
 
 
-    <!-- file://nepAgentAction -->
+    <!-- https://w3id.org/ieee7007/nep#nepAgentAction -->
 
-    <owl:Class rdf:about="file://nepAgentAction">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepAgentAction">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloProcess"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloProcess"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tloaffects"/>
-                        <owl:someValuesFrom rdf:resource="file://nepEnvironment"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tloaffects"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepEnvironment"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -535,30 +536,30 @@
     
 
 
-    <!-- file://nepAgentPlan -->
+    <!-- https://w3id.org/ieee7007/nep#nepAgentPlan -->
 
-    <owl:Class rdf:about="file://nepAgentPlan">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepAgentPlan">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloInformationArtifact"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepsubscribes_to"/>
-                        <owl:someValuesFrom rdf:resource="file://nepEthicalTheory"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepsubscribes_to"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlorenders"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloPlan"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlorenders"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloPlan"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepcontains"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepcontains"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepPlanAction"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepsatisfies"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepsatisfies"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepNorm"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -567,22 +568,22 @@
     
 
 
-    <!-- file://nepAgentRole -->
+    <!-- https://w3id.org/ieee7007/nep#nepAgentRole -->
 
-    <owl:Class rdf:about="file://nepAgentRole">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepAgentRole">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloRole"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloRole"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepassigned_to"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepassigned_to"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepAgent"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepstipulates"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepstipulates"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepNorm"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -591,32 +592,32 @@
     
 
 
-    <!-- file://nepAnswer -->
+    <!-- https://w3id.org/ieee7007/nep#nepAnswer -->
 
-    <owl:Class rdf:about="file://nepAnswer">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepAnswer">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAgentCommunication"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepis_response_to"/>
-                        <owl:someValuesFrom rdf:resource="file://nepQuery"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepis_response_to"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepQuery"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepinitiates"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepinitiates"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepreceives"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepreceives"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -625,89 +626,89 @@
     
 
 
-    <!-- file://nepCommunity -->
+    <!-- https://w3id.org/ieee7007/nep#nepCommunity -->
 
-    <owl:Class rdf:about="file://nepCommunity">
-        <rdfs:subClassOf rdf:resource="file://nepSocialCollection"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepCommunity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
     </owl:Class>
     
 
 
-    <!-- file://nepCompany -->
+    <!-- https://w3id.org/ieee7007/nep#nepCompany -->
 
-    <owl:Class rdf:about="file://nepCompany">
-        <rdfs:subClassOf rdf:resource="file://nepSocialCollection"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepCompany">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
     </owl:Class>
     
 
 
-    <!-- file://nepConsequentialistNorm -->
+    <!-- https://w3id.org/ieee7007/nep#nepConsequentialistNorm -->
 
-    <owl:Class rdf:about="file://nepConsequentialistNorm">
-        <rdfs:subClassOf rdf:resource="file://nepNorm"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepConsequentialistNorm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:Class>
     
 
 
-    <!-- file://nepDeontologicalNorm -->
+    <!-- https://w3id.org/ieee7007/nep#nepDeontologicalNorm -->
 
-    <owl:Class rdf:about="file://nepDeontologicalNorm">
-        <rdfs:subClassOf rdf:resource="file://nepNorm"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepDeontologicalNorm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:Class>
     
 
 
-    <!-- file://nepDepartment -->
+    <!-- https://w3id.org/ieee7007/nep#nepDepartment -->
 
-    <owl:Class rdf:about="file://nepDepartment">
-        <rdfs:subClassOf rdf:resource="file://nepSocialCollection"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepDepartment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
     </owl:Class>
     
 
 
-    <!-- file://nepDerogation -->
+    <!-- https://w3id.org/ieee7007/nep#nepDerogation -->
 
-    <owl:Class rdf:about="file://nepDerogation">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloProcess"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepDerogation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloProcess"/>
     </owl:Class>
     
 
 
-    <!-- file://nepDilemmaMitigationPrinciple -->
+    <!-- https://w3id.org/ieee7007/nep#nepDilemmaMitigationPrinciple -->
 
-    <owl:Class rdf:about="file://nepDilemmaMitigationPrinciple">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloMethod"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepDilemmaMitigationPrinciple">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
     </owl:Class>
     
 
 
-    <!-- file://nepEnumDataTypes -->
+    <!-- https://w3id.org/ieee7007/nep#nepEnumDataTypes -->
 
-    <owl:Class rdf:about="file://nepEnumDataTypes">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepEnumDataTypes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloEnumDataTypes"/>
     </owl:Class>
     
 
 
-    <!-- file://nepEnvironment -->
+    <!-- https://w3id.org/ieee7007/nep#nepEnvironment -->
 
-    <owl:Class rdf:about="file://nepEnvironment">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepEnvironment">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloContinuant"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloContinuant"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepis_perceived_by"/>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepis_perceived_by"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepis_perception_of"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepis_perception_of"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepSituation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -716,17 +717,17 @@
     
 
 
-    <!-- file://nepEthicalDilemma -->
+    <!-- https://w3id.org/ieee7007/nep#nepEthicalDilemma -->
 
-    <owl:Class rdf:about="file://nepEthicalDilemma">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepEthicalDilemma">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloSituation"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloSituation"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepcaused_by"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepcaused_by"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepNorm"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -735,24 +736,24 @@
     
 
 
-    <!-- file://nepEthicalPrinciple -->
+    <!-- https://w3id.org/ieee7007/nep#nepEthicalPrinciple -->
 
-    <owl:Class rdf:about="file://nepEthicalPrinciple">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloMethod"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepEthicalPrinciple">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
     </owl:Class>
     
 
 
-    <!-- file://nepEthicalTheory -->
+    <!-- https://w3id.org/ieee7007/nep#nepEthicalTheory -->
 
-    <owl:Class rdf:about="file://nepEthicalTheory">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepEthicalTheory">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloMethod"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloMethod"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepspecifies_norm_modality"/>
-                        <owl:someValuesFrom rdf:resource="file://nepNorm"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepspecifies_norm_modality"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -761,52 +762,52 @@
     
 
 
-    <!-- file://nepExplanation -->
+    <!-- https://w3id.org/ieee7007/nep#nepExplanation -->
 
-    <owl:Class rdf:about="file://nepExplanation">
-        <rdfs:subClassOf rdf:resource="file://tlo#tloAgentCommunication"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepExplanation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
     </owl:Class>
     
 
 
-    <!-- file://nepGovernment -->
+    <!-- https://w3id.org/ieee7007/nep#nepGovernment -->
 
-    <owl:Class rdf:about="file://nepGovernment">
-        <rdfs:subClassOf rdf:resource="file://nepSocialCollection"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepGovernment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
     </owl:Class>
     
 
 
-    <!-- file://nepNorm -->
+    <!-- https://w3id.org/ieee7007/nep#nepNorm -->
 
-    <owl:Class rdf:about="file://nepNorm">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepNorm">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloMethod"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloMethod"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepaccommodates"/>
-                        <owl:someValuesFrom rdf:resource="file://nepEthicalPrinciple"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepaccommodates"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalPrinciple"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepaccepted_by"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepaccepted_by"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepAgent"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepauthorized_by"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepauthorized_by"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepAgent"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepis_involved_in"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepis_involved_in"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepSituation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepis_prescribed_by"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepis_prescribed_by"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepEthicalTheory"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -815,44 +816,44 @@
     
 
 
-    <!-- file://nepObligation -->
+    <!-- https://w3id.org/ieee7007/nep#nepObligation -->
 
-    <owl:Class rdf:about="file://nepObligation">
-        <rdfs:subClassOf rdf:resource="file://nepDeontologicalNorm"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepObligation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepDeontologicalNorm"/>
     </owl:Class>
     
 
 
-    <!-- file://nepOrganization -->
+    <!-- https://w3id.org/ieee7007/nep#nepOrganization -->
 
-    <owl:Class rdf:about="file://nepOrganization">
-        <rdfs:subClassOf rdf:resource="file://nepSocialCollection"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepOrganization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
     </owl:Class>
     
 
 
-    <!-- file://nepPermission -->
+    <!-- https://w3id.org/ieee7007/nep#nepPermission -->
 
-    <owl:Class rdf:about="file://nepPermission">
-        <rdfs:subClassOf rdf:resource="file://nepDeontologicalNorm"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepPermission">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepDeontologicalNorm"/>
     </owl:Class>
     
 
 
-    <!-- file://nepPlanAction -->
+    <!-- https://w3id.org/ieee7007/nep#nepPlanAction -->
 
-    <owl:Class rdf:about="file://nepPlanAction">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepPlanAction">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloInformationArtifact"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepis_implemented_by"/>
-                        <owl:someValuesFrom rdf:resource="file://nepAgentAction"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepis_implemented_by"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://tlo#tlorenders"/>
-                        <owl:someValuesFrom rdf:resource="file://tlo#tloMethod"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/tlo#tlorenders"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/tlo#tloMethod"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -861,36 +862,36 @@
     
 
 
-    <!-- file://nepProhibition -->
+    <!-- https://w3id.org/ieee7007/nep#nepProhibition -->
 
-    <owl:Class rdf:about="file://nepProhibition">
-        <rdfs:subClassOf rdf:resource="file://nepDeontologicalNorm"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepProhibition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepDeontologicalNorm"/>
     </owl:Class>
     
 
 
-    <!-- file://nepQuery -->
+    <!-- https://w3id.org/ieee7007/nep#nepQuery -->
 
-    <owl:Class rdf:about="file://nepQuery">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepQuery">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAgentCommunication"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepinitiates"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepinitiates"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepreceives"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepreceives"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -899,32 +900,32 @@
     
 
 
-    <!-- file://nepRobot -->
+    <!-- https://w3id.org/ieee7007/nep#nepRobot -->
 
-    <owl:Class rdf:about="file://nepRobot">
-        <rdfs:subClassOf rdf:resource="file://nepAgent"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepRobot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:Class>
     
 
 
-    <!-- file://nepSituation -->
+    <!-- https://w3id.org/ieee7007/nep#nepSituation -->
 
-    <owl:Class rdf:about="file://nepSituation">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepSituation">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloSituation"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloSituation"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepis_perception_of"/>
-                        <owl:someValuesFrom rdf:resource="file://nepEnvironment"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepis_perception_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepEnvironment"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://neprecognizes"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#neprecognizes"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -933,34 +934,34 @@
     
 
 
-    <!-- file://nepSituationPlanRepertoire -->
+    <!-- https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire -->
 
-    <owl:Class rdf:about="file://nepSituationPlanRepertoire">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloInformationArtifact"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepconstrains_plans_for"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepconstrains_plans_for"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepEthicalTheory"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepincludes"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepincludes"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepAgentPlan"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepfeatures_described_in"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepfeatures_described_in"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepSituation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -969,17 +970,17 @@
     
 
 
-    <!-- file://nepSocialCollection -->
+    <!-- https://w3id.org/ieee7007/nep#nepSocialCollection -->
 
-    <owl:Class rdf:about="file://nepSocialCollection">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepSocialCollection">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloCollective"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloCollective"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nepinfluences_norm_applicability"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nepinfluences_norm_applicability"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepNorm"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -988,25 +989,25 @@
     
 
 
-    <!-- file://nepTaskAssignment -->
+    <!-- https://w3id.org/ieee7007/nep#nepTaskAssignment -->
 
-    <owl:Class rdf:about="file://nepTaskAssignment">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepTaskAssignment">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="file://tlo#tloAgentCommunication"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="file://nepreceives"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/nep#nepreceives"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="file://nepAgent"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="file://nephas_as_goal"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/nep#nephas_as_goal"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="file://nepSituation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1015,155 +1016,155 @@
     
 
 
-    <!-- file://nepTeam -->
+    <!-- https://w3id.org/ieee7007/nep#nepTeam -->
 
-    <owl:Class rdf:about="file://nepTeam">
-        <rdfs:subClassOf rdf:resource="file://nepSocialCollection"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepTeam">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepSocialCollection"/>
     </owl:Class>
     
 
 
-    <!-- file://nepVirtuousNorm -->
+    <!-- https://w3id.org/ieee7007/nep#nepVirtuousNorm -->
 
-    <owl:Class rdf:about="file://nepVirtuousNorm">
-        <rdfs:subClassOf rdf:resource="file://nepNorm"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepVirtuousNorm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
     </owl:Class>
     
 
 
-    <!-- file://nepautonomous_action_principles -->
+    <!-- https://w3id.org/ieee7007/nep#nepautonomous_action_principles -->
 
-    <owl:Class rdf:about="file://nepautonomous_action_principles">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepautonomous_action_principles">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Autonomous Action Principles</rdfs:comment>
         <rdfs:comment>{ generalization_principle, principle_of_autonomy, principle_of_informed_consent, interference_principle }</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://nepdilemma_mitigation_principles -->
+    <!-- https://w3id.org/ieee7007/nep#nepdilemma_mitigation_principles -->
 
-    <owl:Class rdf:about="file://nepdilemma_mitigation_principles">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepdilemma_mitigation_principles">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Dilemma Mitigation Principles</rdfs:comment>
         <rdfs:comment>{ principle_of_double_effect, principle_of_triple_effect }</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://nepethical_principles -->
+    <!-- https://w3id.org/ieee7007/nep#nepethical_principles -->
 
-    <owl:Class rdf:about="file://nepethical_principles">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepethical_principles">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Ethical Principle Examples</rdfs:comment>
         <rdfs:comment>{beneficence, nonmaleficence, justice, autonomy, fidelity, veracity, fairness, civility, respect}</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://nepethical_theories -->
+    <!-- https://w3id.org/ieee7007/nep#nepethical_theories -->
 
-    <owl:Class rdf:about="file://nepethical_theories">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepethical_theories">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Ethical Theory Examples</rdfs:comment>
         <rdfs:comment>{virtuous, deontological, consequentialist, composite, divine_command, Buddhists_ethics, ..}</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://nepnorm_category -->
+    <!-- https://w3id.org/ieee7007/nep#nepnorm_category -->
 
-    <owl:Class rdf:about="file://nepnorm_category">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepnorm_category">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Norm Categories</rdfs:comment>
         <rdfs:comment>{ legal_norm, ethical_norm }</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://nepnorm_states -->
+    <!-- https://w3id.org/ieee7007/nep#nepnorm_states -->
 
-    <owl:Class rdf:about="file://nepnorm_states">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepnorm_states">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Norm States</rdfs:comment>
         <rdfs:comment>{ activated, fulfilled, violated, expired, suspended, not_applicable }</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://nepteam_types -->
+    <!-- https://w3id.org/ieee7007/nep#nepteam_types -->
 
-    <owl:Class rdf:about="file://nepteam_types">
-        <rdfs:subClassOf rdf:resource="file://nepEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/nep#nepteam_types">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/nep#nepEnumDataTypes"/>
         <rdfs:comment>Team Types</rdfs:comment>
         <rdfs:comment>{ self_directed_MAS_agents, human_directed }</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- file://tlo#tloAgent -->
+    <!-- https://w3id.org/ieee7007/tlo#tloAgent -->
 
-    <owl:Class rdf:about="file://tlo#tloAgent"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloAgent"/>
     
 
 
-    <!-- file://tlo#tloAgentCommunication -->
+    <!-- https://w3id.org/ieee7007/tlo#tloAgentCommunication -->
 
-    <owl:Class rdf:about="file://tlo#tloAgentCommunication"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
     
 
 
-    <!-- file://tlo#tloCollective -->
+    <!-- https://w3id.org/ieee7007/tlo#tloCollective -->
 
-    <owl:Class rdf:about="file://tlo#tloCollective"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloCollective"/>
     
 
 
-    <!-- file://tlo#tloContinuant -->
+    <!-- https://w3id.org/ieee7007/tlo#tloContinuant -->
 
-    <owl:Class rdf:about="file://tlo#tloContinuant"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloContinuant"/>
     
 
 
-    <!-- file://tlo#tloEnumDataTypes -->
+    <!-- https://w3id.org/ieee7007/tlo#tloEnumDataTypes -->
 
-    <owl:Class rdf:about="file://tlo#tloEnumDataTypes"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloEnumDataTypes"/>
     
 
 
-    <!-- file://tlo#tloInformationArtifact -->
+    <!-- https://w3id.org/ieee7007/tlo#tloInformationArtifact -->
 
-    <owl:Class rdf:about="file://tlo#tloInformationArtifact"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
     
 
 
-    <!-- file://tlo#tloMethod -->
+    <!-- https://w3id.org/ieee7007/tlo#tloMethod -->
 
-    <owl:Class rdf:about="file://tlo#tloMethod"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloMethod"/>
     
 
 
-    <!-- file://tlo#tloPlan -->
+    <!-- https://w3id.org/ieee7007/tlo#tloPlan -->
 
-    <owl:Class rdf:about="file://tlo#tloPlan"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloPlan"/>
     
 
 
-    <!-- file://tlo#tloProcess -->
+    <!-- https://w3id.org/ieee7007/tlo#tloProcess -->
 
-    <owl:Class rdf:about="file://tlo#tloProcess"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloProcess"/>
     
 
 
-    <!-- file://tlo#tloRole -->
+    <!-- https://w3id.org/ieee7007/tlo#tloRole -->
 
-    <owl:Class rdf:about="file://tlo#tloRole"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloRole"/>
     
 
 
-    <!-- file://tlo#tloSituation -->
+    <!-- https://w3id.org/ieee7007/tlo#tloSituation -->
 
-    <owl:Class rdf:about="file://tlo#tloSituation"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/tlo#tloSituation"/>
     
 
 
@@ -1178,82 +1179,82 @@
     
 
 
-    <!-- file://nepactivated -->
+    <!-- https://w3id.org/ieee7007/nep#nepactivated -->
 
-    <owl:NamedIndividual rdf:about="file://nepactivated">
-        <rdf:type rdf:resource="file://nepnorm_states"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepactivated">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepethical_norm -->
+    <!-- https://w3id.org/ieee7007/nep#nepethical_norm -->
 
-    <owl:NamedIndividual rdf:about="file://nepethical_norm">
-        <rdf:type rdf:resource="file://nepnorm_category"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepethical_norm">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_category"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepexpired -->
+    <!-- https://w3id.org/ieee7007/nep#nepexpired -->
 
-    <owl:NamedIndividual rdf:about="file://nepexpired">
-        <rdf:type rdf:resource="file://nepnorm_states"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepexpired">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepfulfilled -->
+    <!-- https://w3id.org/ieee7007/nep#nepfulfilled -->
 
-    <owl:NamedIndividual rdf:about="file://nepfulfilled">
-        <rdf:type rdf:resource="file://nepnorm_states"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepfulfilled">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nephuman_directed -->
+    <!-- https://w3id.org/ieee7007/nep#nephuman_directed -->
 
-    <owl:NamedIndividual rdf:about="file://nephuman_directed">
-        <rdf:type rdf:resource="file://nepteam_types"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nephuman_directed">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepteam_types"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://neplegal_norm -->
+    <!-- https://w3id.org/ieee7007/nep#neplegal_norm -->
 
-    <owl:NamedIndividual rdf:about="file://neplegal_norm">
-        <rdf:type rdf:resource="file://nepnorm_category"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#neplegal_norm">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_category"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepnot_applicable -->
+    <!-- https://w3id.org/ieee7007/nep#nepnot_applicable -->
 
-    <owl:NamedIndividual rdf:about="file://nepnot_applicable">
-        <rdf:type rdf:resource="file://nepnorm_states"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepnot_applicable">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepself_directed_team -->
+    <!-- https://w3id.org/ieee7007/nep#nepself_directed_team -->
 
-    <owl:NamedIndividual rdf:about="file://nepself_directed_team">
-        <rdf:type rdf:resource="file://nepteam_types"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepself_directed_team">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepteam_types"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepsuspended -->
+    <!-- https://w3id.org/ieee7007/nep#nepsuspended -->
 
-    <owl:NamedIndividual rdf:about="file://nepsuspended">
-        <rdf:type rdf:resource="file://nepnorm_states"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepsuspended">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- file://nepviolated -->
+    <!-- https://w3id.org/ieee7007/nep#nepviolated -->
 
-    <owl:NamedIndividual rdf:about="file://nepviolated">
-        <rdf:type rdf:resource="file://nepnorm_states"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/nep#nepviolated">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/nep#nepnorm_states"/>
     </owl:NamedIndividual>
     
 
@@ -1269,46 +1270,46 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://nepActionRationale"/>
-            <rdf:Description rdf:about="file://nepDilemmaMitigationPrinciple"/>
-            <rdf:Description rdf:about="file://nepEthicalPrinciple"/>
-            <rdf:Description rdf:about="file://nepEthicalTheory"/>
-            <rdf:Description rdf:about="file://nepNorm"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepActionRationale"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepDilemmaMitigationPrinciple"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepEthicalPrinciple"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepEthicalTheory"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepNorm"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://nepAgentPlan"/>
-            <rdf:Description rdf:about="file://nepPlanAction"/>
-            <rdf:Description rdf:about="file://nepSituationPlanRepertoire"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepPlanAction"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://nepCommunity"/>
-            <rdf:Description rdf:about="file://nepCompany"/>
-            <rdf:Description rdf:about="file://nepDepartment"/>
-            <rdf:Description rdf:about="file://nepGovernment"/>
-            <rdf:Description rdf:about="file://nepOrganization"/>
-            <rdf:Description rdf:about="file://nepTeam"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepCommunity"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepCompany"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepDepartment"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepGovernment"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepOrganization"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepTeam"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://nepConsequentialistNorm"/>
-            <rdf:Description rdf:about="file://nepDeontologicalNorm"/>
-            <rdf:Description rdf:about="file://nepVirtuousNorm"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepConsequentialistNorm"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepDeontologicalNorm"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepVirtuousNorm"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="file://nepObligation"/>
-            <rdf:Description rdf:about="file://nepPermission"/>
-            <rdf:Description rdf:about="file://nepProhibition"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepObligation"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepPermission"/>
+            <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepProhibition"/>
         </owl:members>
     </rdf:Description>
     
@@ -1360,7 +1361,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepAgent"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1370,7 +1371,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepAgentPlan"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1380,7 +1381,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file://nepPlanAction"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1390,7 +1391,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="file://nepAgentAction"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ac"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1400,7 +1401,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="file://nepEnvironment"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepEnvironment"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -1410,7 +1411,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="file://nepSituation"/>
+                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -1420,7 +1421,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="file://nepis_perception_of"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_perception_of"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#e"/>
                                                                     </rdf:Description>
@@ -1431,7 +1432,7 @@
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="file://nepis_perceived_by"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_perceived_by"/>
                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                                                                             </rdf:Description>
@@ -1442,7 +1443,7 @@
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="file://nepintends_to_realize"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepintends_to_realize"/>
                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                                                                                     </rdf:Description>
@@ -1453,7 +1454,7 @@
                                                                                         <rdf:first>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="file://nepcontains"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepcontains"/>
                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
                                                                                             </rdf:Description>
@@ -1464,7 +1465,7 @@
                                                                                                 <rdf:first>
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="file://nepis_implemented_by"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_implemented_by"/>
                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
                                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#ac"/>
                                                                                                     </rdf:Description>
@@ -1475,7 +1476,7 @@
                                                                                                         <rdf:first>
                                                                                                             <rdf:Description>
                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="file://tlo#tloaffects"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tloaffects"/>
                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ac"/>
                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#e"/>
                                                                                                             </rdf:Description>
@@ -1511,7 +1512,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepapplies"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepapplies"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#ap"/>
                     </rdf:Description>
@@ -1522,7 +1523,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="file://nepexecutes"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepexecutes"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                 <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
                             </rdf:Description>
@@ -1541,7 +1542,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepAgent"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1551,7 +1552,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepAgentPlan"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentPlan"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1561,7 +1562,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file://nepPlanAction"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1571,7 +1572,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="file://nepAgentAction"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1581,7 +1582,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="file://nepEnvironment"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepEnvironment"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -1591,7 +1592,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="file://nepSituation"/>
+                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -1601,7 +1602,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="file://nepis_perception_of"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_perception_of"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#e"/>
                                                                     </rdf:Description>
@@ -1612,7 +1613,7 @@
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="file://nepis_perceived_by"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_perceived_by"/>
                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#e"/>
                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                                                                             </rdf:Description>
@@ -1623,7 +1624,7 @@
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="file://neprecognizes"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#neprecognizes"/>
                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                                                                                     </rdf:Description>
@@ -1634,7 +1635,7 @@
                                                                                         <rdf:first>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="file://nepcontains"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepcontains"/>
                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
                                                                                             </rdf:Description>
@@ -1645,7 +1646,7 @@
                                                                                                 <rdf:first>
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="file://nepis_implemented_by"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_implemented_by"/>
                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
                                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#aa"/>
                                                                                                     </rdf:Description>
@@ -1656,7 +1657,7 @@
                                                                                                         <rdf:first>
                                                                                                             <rdf:Description>
                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="file://tlo#tloaffects"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tloaffects"/>
                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#e"/>
                                                                                                             </rdf:Description>
@@ -1692,7 +1693,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepapplies"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepapplies"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#ap"/>
                     </rdf:Description>
@@ -1703,7 +1704,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="file://nepexecutes"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepexecutes"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                 <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
                             </rdf:Description>
@@ -1722,7 +1723,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepAgentRole"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentRole"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1732,7 +1733,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepAgent"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1742,7 +1743,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="file://tlo#tloenacts"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tloenacts"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                     </rdf:Description>
@@ -1760,7 +1761,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepassigned_to"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepassigned_to"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                     </rdf:Description>
@@ -1777,7 +1778,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepSituationPlanRepertoire"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1787,7 +1788,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepSituation"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1797,7 +1798,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file://nepAgent"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1807,7 +1808,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="file://nepfeatures_described_in"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepfeatures_described_in"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                             </rdf:Description>
@@ -1818,7 +1819,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="file://nepintends_to_realize"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepintends_to_realize"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                                                     </rdf:Description>
@@ -1840,7 +1841,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepselects_plans_from"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepselects_plans_from"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
@@ -1857,7 +1858,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepSituationPlanRepertoire"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituationPlanRepertoire"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1867,7 +1868,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepSituation"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1877,7 +1878,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file://nepAgent"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1887,7 +1888,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="file://nepfeatures_described_in"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepfeatures_described_in"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                             </rdf:Description>
@@ -1898,7 +1899,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="file://neprecognizes"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#neprecognizes"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                                                     </rdf:Description>
@@ -1920,7 +1921,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepselects_plans_from"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepselects_plans_from"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
@@ -1937,7 +1938,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepSituation"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1947,7 +1948,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepAgent"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1957,7 +1958,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="file://neprecognizes"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#neprecognizes"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                                     </rdf:Description>
@@ -1968,7 +1969,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="file://tlo#tloAgentCommunication"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tloAgentCommunication"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ac"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1978,7 +1979,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="file://nepprompts"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepprompts"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#ac"/>
                                                     </rdf:Description>
@@ -2000,7 +2001,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepinitiates"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepinitiates"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#ac"/>
                     </rdf:Description>
@@ -2017,7 +2018,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepNorm"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2027,7 +2028,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="file://nepDerogation"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepDerogation"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
                             </rdf:Description>
                         </rdf:first>
@@ -2037,7 +2038,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file://nepAgentAction"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -2047,7 +2048,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="file://nepactivates"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepactivates"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                                             </rdf:Description>
@@ -2058,7 +2059,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="file://neptemporarily_suspends"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#neptemporarily_suspends"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
                                                     </rdf:Description>
@@ -2080,9 +2081,9 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepstate"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepstate"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
-                        <swrl:argument2 rdf:resource="file://nepsuspended"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nepsuspended"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2097,7 +2098,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="file://nepNorm"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2107,9 +2108,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="file://nepstate"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepstate"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
-                                <swrl:argument2 rdf:resource="file://nepsuspended"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nepsuspended"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2118,7 +2119,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="file://nepDerogation"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepDerogation"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -2128,7 +2129,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="file://nepAgentAction"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -2138,7 +2139,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="file://nepdeactivates"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepdeactivates"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
                                                     </rdf:Description>
@@ -2160,9 +2161,9 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="file://nepstate"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepstate"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
-                        <swrl:argument2 rdf:resource="file://nepactivated"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nepactivated"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

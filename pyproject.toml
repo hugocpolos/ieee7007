@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ieee7007"
-version = "0.2.0"
+version = "0.3.0"
 description = "Library to work with the ontological standards defined on IEEE7007"
 readme = "README.md"
 authors = [{ name = "Hugo Constantinopolos", email = "hugo.cpolos@gmail.com" }]
