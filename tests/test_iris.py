@@ -27,28 +27,19 @@ def test_bundled_ontologies_have_stable_iris(evm):
 
 def test_terms_live_in_the_namespace(evm):
     w = evm.world()
-    assert w.search_one(iri=NAMESPACE + "nep#nepAgentPlan") is not None
-    assert w.search_one(iri=NAMESPACE + "nep#nepapplies") is not None
-    assert w.search_one(iri=NAMESPACE + "tlo#tloActionEvent") is not None
-    assert w.search_one(iri=NAMESPACE + "evm#evmNormViolation") is not None
+    assert w.search_one(iri=NAMESPACE + "nep#AgentPlan") is not None
+    assert w.search_one(iri=NAMESPACE + "nep#applies") is not None
+    assert w.search_one(iri=NAMESPACE + "tlo#ActionEvent") is not None
+    assert w.search_one(iri=NAMESPACE + "evm#NormViolation") is not None
     foreign = [e.iri for e in list(w.classes()) + list(w.properties()) + list(w.individuals())
                if not e.iri.startswith(NAMESPACE) and not e.iri.startswith("http://www.w3.org/")
                and not e.iri.startswith("http://purl.org/")]
     assert foreign == []
 
 
-# Pre-existing bug, not about IRIs: these enumeration-class members' values don't match the keys
-# Factory.get_factory_by_name uses (e.g. 'evmgovernance' vs 'evmgovernance_levels'), so
-# new_individual rejects them. Pinned here so a fix shows up as a test change.
-KNOWN_UNRESOLVABLE = {"evmgovernance", "evmresponsibility", "evmlegal", "nepnorm", "nepteam",
-                      "nepautonomous", "nepdilemma", "nepethical"}
-
-
 def test_every_enum_member_exists(evm):
-    unresolved = {c.value for c in IEEE7007Classes if evm._factory.get_factory_by_name(c.value) is None}
-    assert unresolved == KNOWN_UNRESOLVABLE
-    resolved = [evm._factory.get_factory_by_name(c.value) for c in IEEE7007Classes
-                if c.value not in KNOWN_UNRESOLVABLE]
+    assert [c.value for c in IEEE7007Classes if evm._factory.get_factory_by_name(c.value) is None] == []
+    resolved = [evm._factory.get_factory_by_name(c.value) for c in IEEE7007Classes]
     assert [c.iri for c in resolved if not c.iri.startswith(NAMESPACE)] == []
     properties = {p.name: p for p in evm.world().properties()}
     assert [p.value for p in IEEE7007Properties if p.value not in properties] == []
@@ -93,7 +84,7 @@ def test_saved_file_has_only_individuals_and_no_paths(tmp_path):
     assert "file://" not in text
     assert ONTOLOGIES_DIR not in text and str(tmp_path) not in text and os.getcwd() not in text
     assert f"<{TREE_IRI}> <http://www.w3.org/2002/07/owl#imports> <{ontology_iri('evm')}>" in text
-    assert f"<{TREE_IRI}#robot> <{NAMESPACE}nep#nepapplies> <{TREE_IRI}#plan>" in text
+    assert f"<{TREE_IRI}#robot> <{NAMESPACE}nep#applies> <{TREE_IRI}#plan>" in text
     # The schema is imported, not copied: no class declarations in the file.
     assert "owl#Class>" not in text
     assert len(text.splitlines()) < 20
@@ -115,8 +106,8 @@ def test_saved_file_loads_elsewhere(tmp_path):
         "e = Evm(individuals_file='moved.nt')\n"
         f"assert e.ontology().base_iri == '{TREE_IRI}#'\n"
         "robot = e.world().search_one(iri='*#robot')\n"
-        "assert [c.name for c in robot.is_a] == ['nepRobot']\n"
-        "assert [p.name for p in robot.nepapplies] == ['plan']\n"
+        "assert [c.name for c in robot.is_a] == ['Robot']\n"
+        "assert [p.name for p in robot.applies] == ['plan']\n"
         "print('ok')\n")
     out = subprocess.run([sys.executable, "-c", code], cwd=other, capture_output=True, text=True)
     assert out.returncode == 0, out.stderr
@@ -136,7 +127,7 @@ def test_import_individuals_file_links_without_copying(tmp_path):
     text = (tmp_path / "run.nt").read_text(encoding="utf-8")
 
     assert f"<{RUN_IRI}> <http://www.w3.org/2002/07/owl#imports> <{TREE_IRI}>" in text
-    assert f"<{TREE_IRI}#follow_path> <{NAMESPACE}nep#nepis_implemented_by> <{RUN_IRI}#occ_1>" in text
+    assert f"<{TREE_IRI}#follow_path> <{NAMESPACE}nep#is_implemented_by> <{RUN_IRI}#occ_1>" in text
     # The tree's own individual is not written again.
     assert f"<{TREE_IRI}#follow_path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>" not in text
 

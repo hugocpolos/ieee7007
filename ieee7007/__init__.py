@@ -30,7 +30,9 @@ Usage:
 
     The individuals get IRIs under a fresh 'urn:uuid:' IRI unless one is given:
     ieee7007.Evm(individuals_iri='https://example.org/my-scenario'). The standard's own terms are
-    'https://w3id.org/ieee7007/{tlo,nep,evm}#<name>'.
+    'https://w3id.org/ieee7007/{tlo,nep,evm}#<name>', with the ontology only in the namespace
+    (nep#Robot, nep#applies); the IEEE7007Classes/IEEE7007Properties member names keep their
+    prefix (IEEE7007Classes.nepRobot), and CSV files may use either form.
 
 
     Where the name_of_the_file.csv has the following format:
@@ -79,8 +81,8 @@ Usage:
 
     evm.nav.get_all_properties_relations_of_an_individual(camera)
     # the line above will return the following:
-    # [property: .evmobserves, source: evm.camera, target: evm.robot,
-    #  property: .evmobserves, source: evm.camera, target: evm.robot2]
+    # [property: evm.observes, source: <individuals ontology>.camera, target: <…>.robot,
+    #  property: evm.observes, source: <individuals ontology>.camera, target: <…>.robot2]
 
     # the following illustrates how to access those information:
     for relation in evm.nav.get_all_properties_relations_of_an_individual(camera):

@@ -49,228 +49,228 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmactor -->
+    <!-- https://w3id.org/ieee7007/evm#actor -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmactor">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#actor">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
         <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmascribes -->
+    <!-- https://w3id.org/ieee7007/evm#ascribes -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmascribes">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#ascribes">
         <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmascribes_distributed_responsibility_in -->
+    <!-- https://w3id.org/ieee7007/evm#ascribes_distributed_responsibility_in -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmascribes_distributed_responsibility_in">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#ascribes_distributed_responsibility_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmcause -->
+    <!-- https://w3id.org/ieee7007/evm#cause -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmcause">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#cause">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#AgentAction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmcomposed_of -->
+    <!-- https://w3id.org/ieee7007/evm#composed_of -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmcomposed_of">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmAscriptionJustification"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmGroundsForAscription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#composed_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#AscriptionJustification"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#GroundsForAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmcontributes_to -->
+    <!-- https://w3id.org/ieee7007/evm#contributes_to -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmcontributes_to">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#contributes_to">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmAgentAccountability"/>
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmEventCausation"/>
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmNormViolationIncident"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#AgentAccountability"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#EventCausation"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#NormViolationIncident"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmGroundsForAscription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#GroundsForAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmdetects -->
+    <!-- https://w3id.org/ieee7007/evm#detects -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmdetects">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmEthicalBehaviorMonitor"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#detects">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#EthicalBehaviorMonitor"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmdocumented_in -->
+    <!-- https://w3id.org/ieee7007/evm#documented_in -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmdocumented_in">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolationIncident"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#documented_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#NormViolationIncident"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmeffect -->
+    <!-- https://w3id.org/ieee7007/evm#effect -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmeffect">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#effect">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmelicits -->
+    <!-- https://w3id.org/ieee7007/evm#elicits -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmelicits">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#elicits">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmhas_achieved -->
+    <!-- https://w3id.org/ieee7007/evm#has_achieved -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmhas_achieved">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepGovernment"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmSocioTechnologyGovernance"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#has_achieved">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#Government"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#SocioTechnologyGovernance"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmimposes -->
+    <!-- https://w3id.org/ieee7007/evm#imposes -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmimposes">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgentRole"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmAgentAccountability"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#imposes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#AgentRole"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#AgentAccountability"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmis_ascribed_to -->
+    <!-- https://w3id.org/ieee7007/evm#is_ascribed_to -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmis_ascribed_to">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#is_ascribed_to">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
         <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmis_jurisdiction_of -->
+    <!-- https://w3id.org/ieee7007/evm#is_jurisdiction_of -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmis_jurisdiction_of">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepGovernment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#is_jurisdiction_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#Government"/>
         <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmis_sanction_for -->
+    <!-- https://w3id.org/ieee7007/evm#is_sanction_for -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmis_sanction_for">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmLiabilitySanction"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#is_sanction_for">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#LiabilitySanction"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmis_violation_of -->
+    <!-- https://w3id.org/ieee7007/evm#is_violation_of -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmis_violation_of">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#is_violation_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#Norm"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmjustifies -->
+    <!-- https://w3id.org/ieee7007/evm#justifies -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmjustifies">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmAscriptionJustification"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#justifies">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#AscriptionJustification"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmmaturity -->
+    <!-- https://w3id.org/ieee7007/evm#maturity -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmmaturity">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#maturity">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmSocioTechnologyGovernance"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmgovernance_levels"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#SocioTechnologyGovernance"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#governance_levels"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmmay_be_sanctioned_with -->
+    <!-- https://w3id.org/ieee7007/evm#may_be_sanctioned_with -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmmay_be_sanctioned_with">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#may_be_sanctioned_with">
         <rdfs:domain rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmLiabilitySanction"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#LiabilitySanction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmmay_prescribe -->
+    <!-- https://w3id.org/ieee7007/evm#may_prescribe -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmmay_prescribe">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmLiabilitySanction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#may_prescribe">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#LiabilitySanction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmobserves -->
+    <!-- https://w3id.org/ieee7007/evm#observes -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmobserves">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmEthicalBehaviorMonitor"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#observes">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#EthicalBehaviorMonitor"/>
         <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmperceived_in -->
+    <!-- https://w3id.org/ieee7007/evm#perceived_in -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmperceived_in">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#tloActionEvent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#perceived_in">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/tlo#ActionEvent"/>
         <rdfs:range rdf:resource="https://w3id.org/ieee7007/nep#nepSituation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmrecords_incidence_of -->
+    <!-- https://w3id.org/ieee7007/evm#records_incidence_of -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmrecords_incidence_of">
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolationIncident"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#records_incidence_of">
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#NormViolationIncident"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmscope -->
+    <!-- https://w3id.org/ieee7007/evm#scope -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#evmscope">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ieee7007/evm#scope">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
-        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#evmresponsibility_extent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
+        <rdfs:range rdf:resource="https://w3id.org/ieee7007/evm#responsibility_extent"/>
     </owl:ObjectProperty>
     
 
@@ -286,24 +286,24 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmAccountablePerson -->
+    <!-- https://w3id.org/ieee7007/evm#AccountablePerson -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmAccountablePerson">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#AccountablePerson">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/ieee7007/nep#nepAgent"/>
                     <owl:Class>
-                        <owl:complementOf rdf:resource="https://w3id.org/ieee7007/nep#nepRobot"/>
+                        <owl:complementOf rdf:resource="https://w3id.org/ieee7007/nep#Robot"/>
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -313,20 +313,20 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmAgentAccountability -->
+    <!-- https://w3id.org/ieee7007/evm#AgentAccountability -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmAgentAccountability">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#AgentAccountability">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloSchema"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#Schema"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmimposes"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#imposes"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgentRole"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#AgentRole"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -335,29 +335,29 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmAscriptionJustification -->
+    <!-- https://w3id.org/ieee7007/evm#AscriptionJustification -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmAscriptionJustification">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#AscriptionJustification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#InformationArtifact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmjustifies"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#justifies"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#tloformulates"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/tlo#formulates"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmcomposed_of"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#composed_of"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmGroundsForAscription"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#GroundsForAscription"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -366,21 +366,21 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmDistributedResponsibility -->
+    <!-- https://w3id.org/ieee7007/evm#DistributedResponsibility -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmDistributedResponsibility">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#DistributedResponsibility">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmscope"/>
-                        <owl:hasValue rdf:resource="https://w3id.org/ieee7007/evm#evmmulti_agents"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#scope"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/ieee7007/evm#multi_agents"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmascribes_distributed_responsibility_in"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#ascribes_distributed_responsibility_in"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -398,21 +398,21 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmEthicalBehaviorMonitor -->
+    <!-- https://w3id.org/ieee7007/evm#EthicalBehaviorMonitor -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmEthicalBehaviorMonitor">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#EthicalBehaviorMonitor">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloevmObject"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#evmObject"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmobserves"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#observes"/>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmdetects"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#detects"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -421,36 +421,36 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmEthicalResponsibilityAscription -->
+    <!-- https://w3id.org/ieee7007/evm#EthicalResponsibilityAscription -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmEthicalResponsibilityAscription">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#EthicalResponsibilityAscription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmEventCausation -->
+    <!-- https://w3id.org/ieee7007/evm#EventCausation -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmEventCausation">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#EventCausation">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInteractionProcess"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#InteractionProcess"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmactor"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#actor"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                         <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmcause"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#cause"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#AgentAction"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmeffect"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#effect"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -459,36 +459,36 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmGroundsForAscription -->
+    <!-- https://w3id.org/ieee7007/evm#GroundsForAscription -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmGroundsForAscription">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#GroundsForAscription">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#InformationArtifact"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmcontributes_to"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#contributes_to"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmAgentAccountability"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#AgentAccountability"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmcontributes_to"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#contributes_to"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmcontributes_to"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#contributes_to"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolationIncident"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#NormViolationIncident"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -497,17 +497,17 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription -->
+    <!-- https://w3id.org/ieee7007/evm#LegalResponsibilityAscription -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmmay_prescribe"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#may_prescribe"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -516,17 +516,17 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmLiabilitySanction -->
+    <!-- https://w3id.org/ieee7007/evm#LiabilitySanction -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmLiabilitySanction">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#LiabilitySanction">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloMethod"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#Method"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmis_sanction_for"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#is_sanction_for"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -535,34 +535,34 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmNormViolation -->
+    <!-- https://w3id.org/ieee7007/evm#NormViolation -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmNormViolation">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#NormViolation">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloActionEvent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#ActionEvent"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmdocumented_in"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolationIncident"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#documented_in"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#NormViolationIncident"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmelicits"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#elicits"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmis_violation_of"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#is_violation_of"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#Norm"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmeffect"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#effect"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -571,16 +571,16 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmNormViolationIncident -->
+    <!-- https://w3id.org/ieee7007/evm#NormViolationIncident -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmNormViolationIncident">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#NormViolationIncident">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInformationArtifact"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#InformationArtifact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmrecords_incidence_of"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#records_incidence_of"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -589,35 +589,35 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmResponsibilityAscription -->
+    <!-- https://w3id.org/ieee7007/evm#ResponsibilityAscription -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmResponsibilityAscription">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#ResponsibilityAscription">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloSocialInteractionProcess"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#SocialInteractionProcess"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmjustifies"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#justifies"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#evmAscriptionJustification"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/evm#AscriptionJustification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmascribes_distributed_responsibility_in"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#ascribes_distributed_responsibility_in"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <owl:onClass rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                         <owl:onClass rdf:resource="https://w3id.org/ieee7007/nep#nepAgent"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmascribes"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#ascribes"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
@@ -630,29 +630,29 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmSocioTechnologyGovernance -->
+    <!-- https://w3id.org/ieee7007/evm#SocioTechnologyGovernance -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmSocioTechnologyGovernance">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#SocioTechnologyGovernance">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#tloInteractionProcess"/>
+                    <rdf:Description rdf:about="https://w3id.org/ieee7007/tlo#InteractionProcess"/>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#evmhas_achieved"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/ieee7007/evm#has_achieved"/>
                             </rdf:Description>
                         </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#nepGovernment"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ieee7007/nep#Government"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#evmmaturity"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ieee7007/evm#maturity"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmcertified_high_capacity"/>
-                                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmevolving_capacity"/>
-                                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evmno_capacity"/>
+                                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#certified_high_capacity"/>
+                                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#evolving_capacity"/>
+                                    <rdf:Description rdf:about="https://w3id.org/ieee7007/evm#no_capacity"/>
                                 </owl:oneOf>
                             </owl:Class>
                         </owl:allValuesFrom>
@@ -664,9 +664,9 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmgovernance_levels -->
+    <!-- https://w3id.org/ieee7007/evm#governance_levels -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmgovernance_levels">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#governance_levels">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/evm#evmEnumDataTypes"/>
         <rdfs:comment>Governance maturity levels </rdfs:comment>
         <rdfs:comment>{ no_capacity, evolving_capacity, certified_high_capacity }</rdfs:comment>
@@ -674,9 +674,9 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmlegal_liabilities -->
+    <!-- https://w3id.org/ieee7007/evm#legal_liabilities -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmlegal_liabilities">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#legal_liabilities">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/evm#evmEnumDataTypes"/>
         <rdfs:comment>examples of Legal Liabilities</rdfs:comment>
         <rdfs:comment>{ fine, penalty, restitution, suspension, restriction, demotion, expulsion, instruction, civic_service, incarceration, execution }</rdfs:comment>
@@ -684,9 +684,9 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmresponsibility_extent -->
+    <!-- https://w3id.org/ieee7007/evm#responsibility_extent -->
 
-    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#evmresponsibility_extent">
+    <owl:Class rdf:about="https://w3id.org/ieee7007/evm#responsibility_extent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ieee7007/evm#evmEnumDataTypes"/>
         <rdfs:comment>Responsibility Extent</rdfs:comment>
         <rdfs:comment>{ single_agent, multi_agents }</rdfs:comment>
@@ -705,42 +705,42 @@
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmcertified_high_capacity -->
+    <!-- https://w3id.org/ieee7007/evm#certified_high_capacity -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#evmcertified_high_capacity">
-        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#evmgovernance_levels"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#certified_high_capacity">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#governance_levels"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmevolving_capacity -->
+    <!-- https://w3id.org/ieee7007/evm#evolving_capacity -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#evmevolving_capacity">
-        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#evmgovernance_levels"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#evolving_capacity">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#governance_levels"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmmulti_agents -->
+    <!-- https://w3id.org/ieee7007/evm#multi_agents -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#evmmulti_agents">
-        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#evmresponsibility_extent"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#multi_agents">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#responsibility_extent"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmno_capacity -->
+    <!-- https://w3id.org/ieee7007/evm#no_capacity -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#evmno_capacity">
-        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#evmgovernance_levels"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#no_capacity">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#governance_levels"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ieee7007/evm#evmsingle_agent -->
+    <!-- https://w3id.org/ieee7007/evm#single_agent -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#evmsingle_agent">
-        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#evmresponsibility_extent"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ieee7007/evm#single_agent">
+        <rdf:type rdf:resource="https://w3id.org/ieee7007/evm#responsibility_extent"/>
     </owl:NamedIndividual>
     
 
@@ -824,7 +824,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepTeam"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Team"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
                     </rdf:Description>
                 </rdf:first>
@@ -834,9 +834,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepteam_type"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#team_type"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
-                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nephuman_directed"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#human_directed"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -845,7 +845,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepRobot"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Robot"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -855,7 +855,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#is_member_of"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
                                             </rdf:Description>
@@ -866,7 +866,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmAccountablePerson"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#AccountablePerson"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -876,7 +876,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#is_member_of"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
                                                             </rdf:Description>
@@ -887,7 +887,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#hra"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
@@ -897,9 +897,9 @@
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmscope"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#scope"/>
                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#hra"/>
-                                                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#evmmulti_agents"/>
+                                                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#multi_agents"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
                                                                         <rdf:rest>
@@ -908,7 +908,7 @@
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#hra"/>
                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
                                                                                     </rdf:Description>
@@ -919,7 +919,7 @@
                                                                                         <rdf:first>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepGovernment"/>
+                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Government"/>
                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
@@ -929,7 +929,7 @@
                                                                                                 <rdf:first>
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_jurisdiction_of"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_jurisdiction_of"/>
                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
                                                                                                     </rdf:Description>
@@ -940,7 +940,7 @@
                                                                                                         <rdf:first>
                                                                                                             <rdf:Description>
                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_jurisdiction_of"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_jurisdiction_of"/>
                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                                                                                             </rdf:Description>
@@ -951,7 +951,7 @@
                                                                                                                 <rdf:first>
                                                                                                                     <rdf:Description>
                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmSocioTechnologyGovernance"/>
+                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#SocioTechnologyGovernance"/>
                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#mg"/>
                                                                                                                     </rdf:Description>
                                                                                                                 </rdf:first>
@@ -961,9 +961,9 @@
                                                                                                                         <rdf:first>
                                                                                                                             <rdf:Description>
                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmmaturity"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#maturity"/>
                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#mg"/>
-                                                                                                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#evmevolving_capacity"/>
+                                                                                                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#evolving_capacity"/>
                                                                                                                             </rdf:Description>
                                                                                                                         </rdf:first>
                                                                                                                         <rdf:rest>
@@ -972,7 +972,7 @@
                                                                                                                                 <rdf:first>
                                                                                                                                     <rdf:Description>
                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmhas_achieved"/>
+                                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#has_achieved"/>
                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                                                                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#mg"/>
                                                                                                                                     </rdf:Description>
@@ -983,7 +983,7 @@
                                                                                                                                         <rdf:first>
                                                                                                                                             <rdf:Description>
                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                                                                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                                                                                                                             </rdf:Description>
                                                                                                                                         </rdf:first>
@@ -993,7 +993,7 @@
                                                                                                                                                 <rdf:first>
                                                                                                                                                     <rdf:Description>
                                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Norm"/>
                                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
                                                                                                                                                     </rdf:Description>
                                                                                                                                                 </rdf:first>
@@ -1003,7 +1003,7 @@
                                                                                                                                                         <rdf:first>
                                                                                                                                                             <rdf:Description>
                                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_violation_of"/>
+                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_violation_of"/>
                                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                                                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
                                                                                                                                                             </rdf:Description>
@@ -1014,9 +1014,9 @@
                                                                                                                                                                 <rdf:first>
                                                                                                                                                                     <rdf:Description>
                                                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepcategory"/>
+                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#category"/>
                                                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
-                                                                                                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nepethical_norm"/>
+                                                                                                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#ethical_norm"/>
                                                                                                                                                                     </rdf:Description>
                                                                                                                                                                 </rdf:first>
                                                                                                                                                                 <rdf:rest>
@@ -1025,7 +1025,7 @@
                                                                                                                                                                         <rdf:first>
                                                                                                                                                                             <rdf:Description>
                                                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
+                                                                                                                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
                                                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                                                                                                                                             </rdf:Description>
                                                                                                                                                                         </rdf:first>
@@ -1035,7 +1035,7 @@
                                                                                                                                                                                 <rdf:first>
                                                                                                                                                                                     <rdf:Description>
                                                                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmactor"/>
+                                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#actor"/>
                                                                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                                                                                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                                                                                                                                                                     </rdf:Description>
@@ -1046,7 +1046,7 @@
                                                                                                                                                                                         <rdf:first>
                                                                                                                                                                                             <rdf:Description>
                                                                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmeffect"/>
+                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#effect"/>
                                                                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                                                                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#nv"/>
                                                                                                                                                                                             </rdf:Description>
@@ -1057,7 +1057,7 @@
                                                                                                                                                                                                 <rdf:first>
                                                                                                                                                                                                     <rdf:Description>
                                                                                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmGroundsForAscription"/>
+                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#GroundsForAscription"/>
                                                                                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#ga"/>
                                                                                                                                                                                                     </rdf:Description>
                                                                                                                                                                                                 </rdf:first>
@@ -1067,7 +1067,7 @@
                                                                                                                                                                                                         <rdf:first>
                                                                                                                                                                                                             <rdf:Description>
                                                                                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmcontributes_to"/>
+                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#contributes_to"/>
                                                                                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                                                                                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#ga"/>
                                                                                                                                                                                                             </rdf:Description>
@@ -1078,7 +1078,7 @@
                                                                                                                                                                                                                 <rdf:first>
                                                                                                                                                                                                                     <rdf:Description>
                                                                                                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmAscriptionJustification"/>
+                                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#AscriptionJustification"/>
                                                                                                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#aj"/>
                                                                                                                                                                                                                     </rdf:Description>
                                                                                                                                                                                                                 </rdf:first>
@@ -1088,7 +1088,7 @@
                                                                                                                                                                                                                         <rdf:first>
                                                                                                                                                                                                                             <rdf:Description>
                                                                                                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmcomposed_of"/>
+                                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#composed_of"/>
                                                                                                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#aj"/>
                                                                                                                                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#ga"/>
                                                                                                                                                                                                                             </rdf:Description>
@@ -1099,7 +1099,7 @@
                                                                                                                                                                                                                                 <rdf:first>
                                                                                                                                                                                                                                     <rdf:Description>
                                                                                                                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmEthicalResponsibilityAscription"/>
+                                                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#EthicalResponsibilityAscription"/>
                                                                                                                                                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#eda"/>
                                                                                                                                                                                                                                     </rdf:Description>
                                                                                                                                                                                                                                 </rdf:first>
@@ -1109,7 +1109,7 @@
                                                                                                                                                                                                                                         <rdf:first>
                                                                                                                                                                                                                                             <rdf:Description>
                                                                                                                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmjustifies"/>
+                                                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#justifies"/>
                                                                                                                                                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#aj"/>
                                                                                                                                                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#eda"/>
                                                                                                                                                                                                                                             </rdf:Description>
@@ -1177,7 +1177,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#eda"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
@@ -1188,7 +1188,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmascribes_distributed_responsibility_in"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#ascribes_distributed_responsibility_in"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#eda"/>
                                 <swrl:argument2 rdf:resource="urn:swrl:var#hra"/>
                             </rdf:Description>
@@ -1207,7 +1207,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmDistributedResponsibility"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#DistributedResponsibility"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#dra"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1217,7 +1217,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1227,7 +1227,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmGroundsForAscription"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#GroundsForAscription"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#ga"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1237,7 +1237,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmcontributes_to"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#contributes_to"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                 <swrl:argument2 rdf:resource="urn:swrl:var#ga"/>
                                             </rdf:Description>
@@ -1248,7 +1248,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmactor"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#actor"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                                     </rdf:Description>
@@ -1259,7 +1259,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepRobot"/>
+                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Robot"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -1269,7 +1269,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmAscriptionJustification"/>
+                                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#AscriptionJustification"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#aj"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
@@ -1279,7 +1279,7 @@
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepTeam"/>
+                                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Team"/>
                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
                                                                             </rdf:Description>
                                                                         </rdf:first>
@@ -1289,9 +1289,9 @@
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepteam_type"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#team_type"/>
                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
-                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nephuman_directed"/>
+                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#human_directed"/>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
                                                                                 <rdf:rest>
@@ -1300,7 +1300,7 @@
                                                                                         <rdf:first>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#tlois_member_of"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/tlo#is_member_of"/>
                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
                                                                                             </rdf:Description>
@@ -1332,7 +1332,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmjustifies"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#justifies"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#aj"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#dra"/>
                     </rdf:Description>
@@ -1349,7 +1349,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmEventCausation"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#EventCausation"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1359,7 +1359,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmEthicalBehaviorMonitor"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#EthicalBehaviorMonitor"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1369,7 +1369,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1389,7 +1389,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepPlanAction"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#PlanAction"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -1399,7 +1399,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepAgentAction"/>
+                                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#AgentAction"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -1409,7 +1409,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepis_implemented_by"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#is_implemented_by"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#aa"/>
                                                                     </rdf:Description>
@@ -1420,7 +1420,7 @@
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepexecutes"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#executes"/>
                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
                                                                             </rdf:Description>
@@ -1431,7 +1431,7 @@
                                                                                 <rdf:first>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmobserves"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#observes"/>
                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                                                                                     </rdf:Description>
@@ -1442,7 +1442,7 @@
                                                                                         <rdf:first>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmdetects"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#detects"/>
                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#nv"/>
                                                                                             </rdf:Description>
@@ -1453,7 +1453,7 @@
                                                                                                 <rdf:first>
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmcause"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#cause"/>
                                                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#aa"/>
                                                                                                     </rdf:Description>
@@ -1464,7 +1464,7 @@
                                                                                                         <rdf:first>
                                                                                                             <rdf:Description>
                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmeffect"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#effect"/>
                                                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                                                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#nv"/>
                                                                                                             </rdf:Description>
@@ -1500,7 +1500,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmactor"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#actor"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#ec"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                     </rdf:Description>
@@ -1517,7 +1517,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1537,7 +1537,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                                     </rdf:Description>
@@ -1548,7 +1548,7 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmLiabilitySanction"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#LiabilitySanction"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1558,7 +1558,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_sanction_for"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_sanction_for"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
                                                     </rdf:Description>
@@ -1580,7 +1580,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmmay_be_sanctioned_with"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#may_be_sanctioned_with"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
                     </rdf:Description>
@@ -1597,7 +1597,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1607,7 +1607,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Norm"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1617,7 +1617,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_violation_of"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_violation_of"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
                                     </rdf:Description>
@@ -1628,9 +1628,9 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepcategory"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#category"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
-                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#nepethical_norm"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#ethical_norm"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1639,7 +1639,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -1649,7 +1649,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmelicits"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#elicits"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#ra"/>
                                                             </rdf:Description>
@@ -1673,7 +1673,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmEthicalResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#EthicalResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1689,7 +1689,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmNormViolation"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#NormViolation"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1699,7 +1699,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepNorm"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Norm"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1709,7 +1709,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_violation_of"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_violation_of"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
                                     </rdf:Description>
@@ -1720,9 +1720,9 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepcategory"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/nep#category"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#n"/>
-                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#neplegal_norm"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/nep#legal_norm"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1731,7 +1731,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -1741,7 +1741,7 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmelicits"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#elicits"/>
                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#nv"/>
                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#ra"/>
                                                             </rdf:Description>
@@ -1765,7 +1765,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmLegalResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#LegalResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1781,7 +1781,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1791,7 +1791,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#dra"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1801,7 +1801,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmascribes_distributed_responsibility_in"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#ascribes_distributed_responsibility_in"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#dra"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#ra"/>
                                     </rdf:Description>
@@ -1835,7 +1835,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1845,9 +1845,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmscope"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#scope"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
-                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#evmsingle_agent"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#single_agent"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1856,7 +1856,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#ra"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
                                     </rdf:Description>
@@ -1874,7 +1874,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmAccountablePerson"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#AccountablePerson"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#h"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1890,7 +1890,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1900,7 +1900,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#nepGovernment"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/nep#Government"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1910,7 +1910,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmSocioTechnologyGovernance"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#SocioTechnologyGovernance"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#mg"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1920,9 +1920,9 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmmaturity"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#maturity"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#mg"/>
-                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#evmno_capacity"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/ieee7007/evm#no_capacity"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1931,7 +1931,7 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmhas_achieved"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#has_achieved"/>
                                                         <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                                                         <swrl:argument2 rdf:resource="urn:swrl:var#mg"/>
                                                     </rdf:Description>
@@ -1952,7 +1952,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_jurisdiction_of"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_jurisdiction_of"/>
                                                                         <swrl:argument1 rdf:resource="urn:swrl:var#g"/>
                                                                         <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                                                                     </rdf:Description>
@@ -1963,7 +1963,7 @@
                                                                         <rdf:first>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                                                                                 <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                                                                 <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
                                                                             </rdf:Description>
@@ -1991,7 +1991,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmAccountablePerson"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#AccountablePerson"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2007,7 +2007,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmResponsibilityAscription"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/ieee7007/evm#ResponsibilityAscription"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2017,7 +2017,7 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmascribes"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#ascribes"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
                                 <swrl:argument2 rdf:resource="urn:swrl:var#x"/>
                             </rdf:Description>
@@ -2028,7 +2028,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#evmis_ascribed_to"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/ieee7007/evm#is_ascribed_to"/>
                                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                                         <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
                                     </rdf:Description>

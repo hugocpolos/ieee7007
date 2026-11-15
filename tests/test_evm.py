@@ -64,10 +64,10 @@ def test_load_instance_manually_by_name(evm):
 def test_load_instance_manually_by_instance(evm):
     robot1 = evm.new_individual(IEEE7007Classes.nepRobot, 'robot1')
     assert robot1.name == 'robot1'
-    assert 'nepRobot' in [x.name for x in robot1.is_a]
+    assert 'Robot' in [x.name for x in robot1.is_a]
     camera1 = evm.new_individual(IEEE7007Classes.evmEthicalBehaviorMonitor, 'camera1')
     assert camera1.name == 'camera1'
-    assert 'evmEthicalBehaviorMonitor' in [x.name for x in camera1.is_a]
+    assert 'EthicalBehaviorMonitor' in [x.name for x in camera1.is_a]
 
 
 def test_load_instance_property_manually_by_name(evm):
@@ -80,7 +80,7 @@ def test_load_instance_property_manually_by_name(evm):
     relations = evm.nav.get_all_properties_relations_of_an_individual(camera1)
     assert relations is not None
     assert len(relations) == 1
-    assert relations[0].prop.name == 'evmobserves'
+    assert relations[0].prop.name == 'observes'
     assert relations[0].source.name == 'camera1'
     assert relations[0].target.name == 'robot1'
 
@@ -140,7 +140,7 @@ def test_load_an_ontology_from_a_modified_file(evm, file_operation):
     assert new_camera != camera
     assert new_camera.name == 'camera'
 
-    new_robot in new_camera.evmobserves
+    assert new_robot in new_camera.observes
 
 
 def test_reasoning(evm):

@@ -9,6 +9,7 @@ It includes functions and classes that handle the load of individual and propert
 import csv
 import os.path
 
+from ieee7007.factory import resolve_name
 from ieee7007.types import IEEE7007InvalidClass, IEEE7007InvalidProperty
 
 
@@ -118,7 +119,8 @@ class IndividualsLoader:
         Creates a new property relationship between individuals.
 
         Args:
-            property_class: The class of the property being created.
+            property_class: The property's local name ('applies'); the pre-0.3.0 prefixed name
+                ('nepapplies') is also accepted.
             source: The source individual (can be a string name or an individual).
             target: The target individual (can be a string name or an individual).
 
@@ -142,13 +144,15 @@ class IndividualsLoader:
         if source_individual is None:
             raise ValueError(f"individual '{target}' does not exist")
 
+        property_names = {p.name for p in self._ontology.world.properties()}
+        property_class = resolve_name(property_class, property_names) or property_class
         if not hasattr(source_individual, property_class):
             raise IEEE7007InvalidProperty(
                 f"""property '{property_class}' does not exist in the class
                     '{source_individual.is_a[0]}'""")
 
         source_property = getattr(source_individual, property_class)
-        if property_class in ['nepcategory', 'nepteam_type']:
+        if property_class in ['category', 'team_type']:
             setattr(source_individual, property_class, target_individual)
         else:
             source_property.append(target_individual)
