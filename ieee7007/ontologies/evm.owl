@@ -13,7 +13,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://w3id.org/ieee7007/evm">
-        <owl:versionIRI rdf:resource="https://w3id.org/ieee7007/0.3.0/evm"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/ieee7007/0.3.1/evm"/>
         <owl:imports rdf:resource="https://w3id.org/ieee7007/nep"/>
         <owl:imports rdf:resource="https://w3id.org/ieee7007/tlo"/>
         <rdfs:comment>An example mapping of ERAS-EVM CLIF axioms into OWL axioms using Manchester OWL syntax</rdfs:comment>

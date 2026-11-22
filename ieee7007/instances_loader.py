@@ -9,6 +9,8 @@ It includes functions and classes that handle the load of individual and propert
 import csv
 import os.path
 
+import owlready2
+
 from ieee7007.factory import resolve_name
 from ieee7007.types import IEEE7007InvalidClass, IEEE7007InvalidProperty
 
@@ -124,6 +126,9 @@ class IndividualsLoader:
             source: The source individual (can be a string name or an individual).
             target: The target individual (can be a string name or an individual).
 
+        A functional property (e.g. ``state``, ``category``) holds at most one value, so it is set,
+        replacing any previous value; any other property gets ``target`` appended.
+
         Raises:
             ValueError: The individual does not exist.
             IEEE7007InvalidProperty: The property does not exist in the source individual.
@@ -141,21 +146,20 @@ class IndividualsLoader:
         else:
             target_individual = target
 
-        if source_individual is None:
+        if target_individual is None:
             raise ValueError(f"individual '{target}' does not exist")
 
-        property_names = {p.name for p in self._ontology.world.properties()}
-        property_class = resolve_name(property_class, property_names) or property_class
-        if not hasattr(source_individual, property_class):
+        properties = {p.name: p for p in self._ontology.world.properties()}
+        property_class = resolve_name(property_class, properties.keys()) or property_class
+        if property_class not in properties or not hasattr(source_individual, property_class):
             raise IEEE7007InvalidProperty(
                 f"""property '{property_class}' does not exist in the class
                     '{source_individual.is_a[0]}'""")
 
-        source_property = getattr(source_individual, property_class)
-        if property_class in ['category', 'team_type']:
+        if owlready2.FunctionalProperty in properties[property_class].is_a:
             setattr(source_individual, property_class, target_individual)
         else:
-            source_property.append(target_individual)
+            getattr(source_individual, property_class).append(target_individual)
 
     def _empty_line(self, csv_line: list):
         """
