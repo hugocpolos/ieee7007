@@ -10,7 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ieee7007/tlo">
-        <owl:versionIRI rdf:resource="https://w3id.org/ieee7007/0.3.0/tlo"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/ieee7007/0.3.1/tlo"/>
         <rdfs:comment>An example mapping of ERAS-TLO CLIF axioms into OWL axioms using Manchester OWL syntax</rdfs:comment>
     </owl:Ontology>
     
